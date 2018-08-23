@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/v6_bg">
+
+    <RelativeLayout
+
+        android:id="@+id/rl_total"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/device_setting_textview_height"
+        android:layout_marginTop="@dimen/default_padding_normal"
+        android:background="@color/white">
+
+        <TextView
+            style="@style/device_setting_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/default_padding_normal"
+            android:text="@string/Total_Capacity" />
+
+        <TextView
+            android:id="@+id/tv_total"
+            android:gravity="center_vertical"
+            style="@style/device_setting_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/default_padding_small" />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="1dp"
+        android:id="@+id/rl_used_storage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/device_setting_textview_height"
+        android:background="@color/white">
+
+        <TextView
+            style="@style/device_setting_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/default_padding_normal"
+            android:text="@string/Used_Capacity" />
+
+        <TextView
+            android:id="@+id/tv_used_storage"
+            style="@style/device_setting_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginRight="@dimen/default_padding_small"
+            android:layout_toLeftOf="@+id/iv_arrows"
+           android:layout_alignParentRight="true" />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:gravity="center"
+        android:text="@string/Format"
+        android:textSize="@dimen/default_text_size"
+        android:id="@+id/btn_formatting"
+        android:background="#f77e25"
+        android:textColor="@color/white"
+        android:layout_marginLeft="@dimen/default_padding_normal"
+        android:layout_marginRight="@dimen/default_padding_normal"
+        android:layout_marginTop="@dimen/default_padding_large"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/config_device_btn_height" />
+
+
+</LinearLayout>

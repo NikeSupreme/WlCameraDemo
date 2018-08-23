@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/config_device_btn_height"
+            android:layout_marginLeft="@dimen/config_default_padding"
+            android:gravity="center_vertical"
+            android:text="@string/Camera_Voice_Chose"
+            android:textSize="16sp" />
+
+        <ListView
+            android:id="@+id/lv_broadcast_voice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+        </ListView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/config_device_btn_height"
+            android:layout_marginLeft="@dimen/config_default_padding"
+            android:gravity="center_vertical"
+            android:text="@string/Camera_Language"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_en"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_button_height"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/config_device_btn_height"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="@string/English"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/iv_checked_en"
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/default_padding_normal"
+                android:src="@drawable/icon_check_mark"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="2dp"
+            android:id="@+id/rl_ch"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_button_height"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/config_device_btn_height"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="@string/Cylincam_Language_Chinese"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/iv_checked_ch"
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/default_padding_normal"
+                android:src="@drawable/icon_check_mark"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

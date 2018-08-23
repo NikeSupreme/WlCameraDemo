@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/v6_bg"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/rl_device_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/device_setting_textview_height"
+                android:layout_marginTop="@dimen/default_padding_normal"
+                android:background="@color/white">
+
+                <TextView
+                    style="@style/device_setting_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/default_padding_normal"
+                    android:text="@string/Camera_Name" />
+
+                <TextView
+                    android:id="@+id/tv_device_name"
+                    style="@style/device_setting_text"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/default_padding_normal"
+                    android:layout_marginRight="@dimen/default_padding_small"
+                    android:layout_toLeftOf="@+id/iv_arrows"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical|right"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/default_padding_normal" />
+
+                <ImageView
+                    android:id="@+id/iv_arrows"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="@dimen/default_padding_normal"
+                    android:background="@drawable/system_intent_right" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_device_information"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/device_setting_textview_height"
+                android:layout_marginTop="1dp"
+                android:background="@color/white">
+
+                <TextView
+                    style="@style/device_setting_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/default_padding_normal"
+                    android:text="@string/Camera_Info" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="@dimen/default_padding_normal"
+                    android:background="@drawable/system_intent_right" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_invert"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/config_device_btn_height"
+                android:layout_marginTop="@dimen/default_padding_normal"
+                android:background="@color/white">
+
+                <TextView
+                    style="@style/device_setting_text_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/default_padding_normal"
+                    android:text="@string/Picture_Invert" />
+
+                <ToggleButton
+                    android:id="@+id/tb_invert"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/default_padding_small"
+                    android:background="@drawable/selector_toggle_button"
+                    android:paddingRight="@dimen/default_padding_small"
+                    android:textOff=""
+                    android:textOn="" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_led"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/config_device_btn_height"
+                android:layout_marginTop="1dp"
+                android:background="@color/white">
+
+                <TextView
+                    style="@style/device_setting_text_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/default_padding_normal"
+                    android:text="@string/LED" />
+
+                <ToggleButton
+                    android:id="@+id/tb_led"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/default_padding_small"
+                    android:background="@drawable/selector_toggle_button"
+                    android:paddingRight="@dimen/default_padding_small"
+                    android:textOff=""
+                    android:textOn="" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_voice"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/config_device_btn_height"
+                android:layout_marginTop="1dp"
+                android:background="@color/white">
+
+                <TextView
+                    style="@style/device_setting_text_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/default_padding_normal"
+                    android:text="@string/Camera_Voice" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="@dimen/default_padding_normal"
+                    android:background="@drawable/system_intent_right" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_zone"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/config_device_btn_height"
+                android:layout_marginTop="1dp"
+                android:background="@color/white">
+
+                <TextView
+                    style="@style/device_setting_text_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/default_padding_normal"
+                    android:text="@string/Time_Zone" />
+
+                <TextView
+                    android:id="@+id/tv_zone_name"
+                    style="@style/device_setting_text_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/default_padding_small"
+                    android:layout_toLeftOf="@+id/iv"
+                    android:gravity="center_vertical" />
+
+                <ImageView
+                    android:id="@+id/iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="@dimen/default_padding_normal"
+                    android:background="@drawable/system_intent_right" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_record_storage"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/device_setting_textview_height"
+                android:layout_marginTop="@dimen/default_padding_normal"
+                android:background="@color/white">
+
+                <TextView
+                    style="@style/device_setting_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/default_padding_normal"
+                    android:text="@string/Device_VideoStorage" />
+
+                <TextView
+                    android:id="@+id/tv_has_SD_card"
+                    style="@style/device_setting_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@+id/iv_arrows_storage"
+                    android:gravity="center_vertical"
+                    android:paddingRight="@dimen/default_padding_normal" />
+
+                <ImageView
+                    android:id="@+id/iv_arrows_storage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="@dimen/default_padding_normal"
+                    android:background="@drawable/system_intent_right" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_safe_protect"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/device_setting_textview_height"
+                android:layout_marginTop="1dp"
+                android:background="@color/white">
+
+                <TextView
+                    style="@style/device_setting_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/default_padding_normal"
+                    android:text="@string/Safety_Protection" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="@dimen/default_padding_normal"
+                    android:background="@drawable/system_intent_right" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

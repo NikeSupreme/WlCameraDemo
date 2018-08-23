@@ -1,0 +1,2034 @@
+{
+  "zone": [
+    {
+      "zone": "GMT0",
+      "cn": "非洲/阿比让",
+      "en": "Africa/Abidjan"
+    },
+    {
+      "zone": "GMT0",
+      "cn": "非洲/阿克拉",
+      "en": "Africa/Accra"
+    },
+    {
+      "zone": "EAT-3",
+      "cn": "非洲/亚的斯亚贝巴",
+      "en": "Africa/Addis Ababa"
+    },
+    {
+      "zone": "CET-1",
+      "cn": "非洲/阿尔及尔",
+      "en": "Africa/Algiers"
+    },
+    {
+      "zone": "EAT-3",
+      "cn": "非洲/阿斯马拉",
+      "en": "Africa/Asmara"
+    },
+    {
+      "zone": "GMT0",
+      "cn": "非洲/巴马科",
+      "en": "Africa/Bamako"
+    },
+    {
+      "zone": "WAT-1",
+      "cn": "非洲/班吉",
+      "en": "Africa/Bangui"
+    },
+    {
+      "zone": "GMT0",
+      "cn": "非洲/班珠尔",
+      "en": "Africa/Banjul"
+    },
+    {
+      "zone": "GMT0",
+      "cn": "非洲/比绍",
+      "en": "Africa/Bissau"
+    },
+    {
+      "zone": "CAT-2",
+      "cn": "非洲/布兰太尔",
+      "en": "Africa/Blantyre"
+    },
+    {
+      "zone": "WAT-1",
+      "cn": "非洲/布拉柴维尔",
+      "en": "Africa/Brazzaville"
+    },
+    {
+      "zone": "CAT-2",
+      "cn": "非洲/布琼布拉",
+      "en": "Africa/Bujumbura"
+    },
+    {
+      "zone": "WET0",
+      "cn": "非洲/卡萨布兰卡",
+      "en": "Africa/Casablanca"
+    },
+    {
+      "zone": "CET-1CEST,M3.5.0,M10.5.0/3",
+      "cn": "非洲/休达",
+      "en": "Africa/Ceuta"
+    },
+    {
+      "zone": "GMT0",
+      "cn": "非洲/科纳克里",
+      "en": "Africa/Conakry"
+    },
+    {
+      "zone": "GMT0",
+      "cn": "非洲/达喀尔",
+      "en": "Africa/Dakar"
+    },
+    {
+      "zone": "EAT-3",
+      "cn": "非洲/达累斯萨拉姆",
+      "en": "Africa/Dar es Salaam"
+    },
+    {
+      "zone": "EAT-3",
+      "cn": "非洲/吉布提",
+      "en": "Africa/Djibouti"
+    },
+    {
+      "zone": "WAT-1",
+      "cn": "非洲/杜阿拉",
+      "en": "Africa/Douala"
+    },
+    {
+      "zone": "WET0",
+      "cn": "非洲/阿尤恩",
+      "en": "Africa/El Aaiun"
+    },
+    {
+      "zone": "GMT0",
+      "cn": "非洲/弗里敦",
+      "en": "Africa/Freetown"
+    },
+    {
+      "zone": "CAT-2",
+      "cn": "非洲/哈博罗内",
+      "en": "Africa/Gaborone"
+    },
+    {
+      "zone": "CAT-2",
+      "cn": "非洲/哈拉雷",
+      "en": "Africa/Harare"
+    },
+    {
+      "zone": "SAST-2",
+      "cn": "非洲/约翰内斯堡",
+      "en": "Africa/Johannesburg"
+    },
+    {
+      "zone": "EAT-3",
+      "cn": "非洲/朱巴",
+      "en": "Africa/Juba"
+    },
+    {
+      "zone": "EAT-3",
+      "cn": "非洲/坎帕拉",
+      "en": "Africa/Kampala"
+    },
+    {
+      "zone": "EAT-3",
+      "cn": "非洲/喀土穆",
+      "en": "Africa/Khartoum"
+    },
+    {
+      "zone": "CAT-2",
+      "cn": "非洲/基加利",
+      "en": "Africa/Kigali"
+    },
+    {
+      "zone": "WAT-1",
+      "cn": "非洲/金沙萨",
+      "en": "Africa/Kinshasa"
+    },
+    {
+      "zone": "WAT-1",
+      "cn": "非洲/拉各斯",
+      "en": "Africa/Lagos"
+    },
+    {
+      "zone": "WAT-1",
+      "cn": "非洲/利伯维尔",
+      "en": "Africa/Libreville"
+    },
+    {
+      "zone": "GMT0",
+      "cn": "非洲/洛美",
+      "en": "Africa/Lome"
+    },
+    {
+      "zone": "WAT-1",
+      "cn": "非洲/罗安达",
+      "en": "Africa/Luanda"
+    },
+    {
+      "zone": "CAT-2",
+      "cn": "非洲/卢本巴希",
+      "en": "Africa/Lubumbashi"
+    },
+    {
+      "zone": "CAT-2",
+      "cn": "非洲/卢萨卡",
+      "en": "Africa/Lusaka"
+    },
+    {
+      "zone": "WAT-1",
+      "cn": "非洲/马拉博",
+      "en": "Africa/Malabo"
+    },
+    {
+      "zone": "CAT-2",
+      "cn": "非洲/马普托",
+      "en": "Africa/Maputo"
+    },
+    {
+      "zone": "SAST-2",
+      "cn": "非洲/马塞卢",
+      "en": "Africa/Maseru"
+    },
+    {
+      "zone": "SAST-2",
+      "cn": "非洲/姆巴巴",
+      "en": "Africa/Mbabane"
+    },
+    {
+      "zone": "EAT-3",
+      "cn": "非洲/摩加迪沙",
+      "en": "Africa/Mogadishu"
+    },
+    {
+      "zone": "GMT0",
+      "cn": "非洲/蒙罗维亚",
+      "en": "Africa/Monrovia"
+    },
+    {
+      "zone": "EAT-3",
+      "cn": "非洲/内罗毕",
+      "en": "Africa/Nairobi"
+    },
+    {
+      "zone": "WAT-1",
+      "cn": "非洲/恩贾梅纳",
+      "en": "Africa/Ndjamena"
+    },
+    {
+      "zone": "WAT-1",
+      "cn": "非洲/尼亚美",
+      "en": "Africa/Niamey"
+    },
+    {
+      "zone": "GMT0",
+      "cn": "非洲/努瓦克肖特",
+      "en": "Africa/Nouakchott"
+    },
+    {
+      "zone": "GMT0",
+      "cn": "非洲/瓦加杜古",
+      "en": "Africa/Ouagadougou"
+    },
+    {
+      "zone": "WAT-1",
+      "cn": "非洲/波多诺伏",
+      "en": "Africa/Porto-Novo"
+    },
+    {
+      "zone": "GMT0",
+      "cn": "非洲/圣多美",
+      "en": "Africa/Sao Tome"
+    },
+    {
+      "zone": "EET-2",
+      "cn": "非洲/的黎波里",
+      "en": "Africa/Tripoli"
+    },
+    {
+      "zone": "CET-1",
+      "cn": "非洲/突尼斯",
+      "en": "Africa/Tunis"
+    },
+    {
+      "zone": "WAT-1WAST,M9.1.0,M4.1.0",
+      "cn": "非洲/温得和克",
+      "en": "Africa/Windhoek"
+    },
+    {
+      "zone": "HAST10HADT,M3.2.0,M11.1.0",
+      "cn": "美洲/埃达克",
+      "en": "America/Adak"
+    },
+    {
+      "zone": "AKST9AKDT,M3.2.0,M11.1.0",
+      "cn": "美洲/安克雷奇",
+      "en": "America/Anchorage"
+    },
+    {
+      "zone": "AST4",
+      "cn": "美洲/安圭拉",
+      "en": "America/Anguilla"
+    },
+    {
+      "zone": "AST4",
+      "cn": "美洲/安提瓜",
+      "en": "America/Antigua"
+    },
+    {
+      "zone": "BRT3",
+      "cn": "美洲/阿拉瓜伊纳",
+      "en": "America/Araguaina"
+    },
+    {
+      "zone": "ART3",
+      "cn": "美洲/阿根廷/布宜诺斯艾利斯",
+      "en": "America/Argentina/Buenos Aires"
+    },
+    {
+      "zone": "ART3",
+      "cn": "美洲/阿根廷/卡塔马卡",
+      "en": "America/Argentina/Catamarca"
+    },
+    {
+      "zone": "ART3",
+      "cn": "美洲/阿根廷/科尔多瓦",
+      "en": "America/Argentina/Cordoba"
+    },
+    {
+      "zone": "ART3",
+      "cn": "美洲/阿根廷/胡胡伊",
+      "en": "America/Argentina/Jujuy"
+    },
+    {
+      "zone": "ART3",
+      "cn": "美洲/阿根廷/拉里奥哈",
+      "en": "America/Argentina/La Rioja"
+    },
+    {
+      "zone": "ART3",
+      "cn": "美洲/阿根廷/门多萨",
+      "en": "America/Argentina/Mendoza"
+    },
+    {
+      "zone": "ART3",
+      "cn": "美洲/阿根廷/里奥加耶戈斯",
+      "en": "America/Argentina/Rio Gallegos"
+    },
+    {
+      "zone": "ART3",
+      "cn": "美洲/阿根廷/萨尔塔",
+      "en": "America/Argentina/Salta"
+    },
+    {
+      "zone": "ART3",
+      "cn": "美洲/阿根廷/圣胡安",
+      "en": "America/Argentina/San Juan"
+    },
+    {
+      "zone": "ART3",
+      "cn": "美洲/阿根廷/图库曼",
+      "en": "America/Argentina/Tucuman"
+    },
+    {
+      "zone": "ART3",
+      "cn": "美洲/阿根廷/乌斯怀亚",
+      "en": "America/Argentina/Ushuaia"
+    },
+    {
+      "zone": "AST4",
+      "cn": "美洲/阿鲁巴",
+      "en": "America/Aruba"
+    },
+    {
+      "zone": "PYT4PYST,M10.1.0/0,M4.2.0/0",
+      "cn": "美洲/亚松森",
+      "en": "America/Asuncion"
+    },
+    {
+      "zone": "EST5",
+      "cn": "美洲/阿蒂科肯",
+      "en": "America/Atikokan"
+    },
+    {
+      "zone": "BRT3BRST,M10.3.0/0,M2.3.0/0",
+      "cn": "美洲/巴伊亚",
+      "en": "America/Bahia"
+    },
+    {
+      "zone": "CST6CDT,M4.1.0,M10.5.0",
+      "cn": "美洲/巴伊亚班德拉斯",
+      "en": "America/Bahia Banderas"
+    },
+    {
+      "zone": "AST4",
+      "cn": "美洲/巴巴多斯",
+      "en": "America/Barbados"
+    },
+    {
+      "zone": "BRT3",
+      "cn": "美洲/贝伦",
+      "en": "America/Belem"
+    },
+    {
+      "zone": "CST6",
+      "cn": "美洲/伯利兹",
+      "en": "America/Belize"
+    },
+    {
+      "zone": "AST4",
+      "cn": "美国/勃朗萨布隆",
+      "en": "America/Blanc-Sablon"
+    },
+    {
+      "zone": "AMT4",
+      "cn": "美洲/博阿维斯塔",
+      "en": "America/Boa Vista"
+    },
+    {
+      "zone": "COT5",
+      "cn": "美洲/波哥大",
+      "en": "America/Bogota"
+    },
+    {
+      "zone": "MST7MDT,M3.2.0,M11.1.0",
+      "cn": "美洲/博伊西",
+      "en": "America/Boise"
+    },
+    {
+      "zone": "MST7MDT,M3.2.0,M11.1.0",
+      "cn": "美洲/剑桥湾",
+      "en": "America/Cambridge Bay"
+    },
+    {
+      "zone": "AMT4AMST,M10.3.0/0,M2.3.0/0",
+      "cn": "美洲/大坎普",
+      "en": "America/Campo Grande"
+    },
+    {
+      "zone": "CST6CDT,M4.1.0,M10.5.0",
+      "cn": "美洲/坎昆",
+      "en": "America/Cancun"
+    },
+    {
+      "zone": "VET4:30",
+      "cn": "美洲/加拉加斯",
+      "en": "America/Caracas"
+    },
+    {
+      "zone": "GFT3",
+      "cn": "美洲/卡宴",
+      "en": "America/Cayenne"
+    },
+    {
+      "zone": "EST5",
+      "cn": "美洲/开曼",
+      "en": "America/Cayman"
+    },
+    {
+      "zone": "CST6CDT,M3.2.0,M11.1.0",
+      "cn": "美国/芝加哥",
+      "en": "America/Chicago"
+    },
+    {
+      "zone": "MST7MDT,M4.1.0,M10.5.0",
+      "cn": "美洲/奇瓦瓦",
+      "en": "America/Chihuahua"
+    },
+    {
+      "zone": "CST6",
+      "cn": "美洲/哥斯达黎加",
+      "en": "America/Costa Rica"
+    },
+    {
+      "zone": "AMT4AMST,M10.3.0/0,M2.3.0/0",
+      "cn": "美洲/库亚巴",
+      "en": "America/Cuiaba"
+    },
+    {
+      "zone": "AST4",
+      "cn": "美洲/库拉索",
+      "en": "America/Curacao"
+    },
+    {
+      "zone": "GMT0",
+      "cn": "美洲/丹马沙",
+      "en": "America/Danmarkshavn"
+    },
+    {
+      "zone": "PST8PDT,M3.2.0,M11.1.0",
+      "cn": "美洲/道森",
+      "en": "America/Dawson"
+    },
+    {
+      "zone": "MST7",
+      "cn": "美洲/道森克里克",
+      "en": "America/Dawson Creek"
+    },
+    {
+      "zone": "MST7MDT,M3.2.0,M11.1.0",
+      "cn": "美洲/丹佛",
+      "en": "America/Denver"
+    },
+    {
+      "zone": "EST5EDT,M3.2.0,M11.1.0",
+      "cn": "美洲/底特律",
+      "en": "America/Detroit"
+    },
+    {
+      "zone": "AST4",
+      "cn": "美洲/多米尼加",
+      "en": "America/Dominica"
+    },
+    {
+      "zone": "MST7MDT,M3.2.0,M11.1.0",
+      "cn": "美洲/埃德蒙顿",
+      "en": "America/Edmonton"
+    },
+    {
+      "zone": "AMT4",
+      "cn": "美洲/埃鲁内佩",
+      "en": "America/Eirunepe"
+    },
+    {
+      "zone": "CST6",
+      "cn": "美洲/萨尔瓦多",
+      "en": "America/El Salvador"
+    },
+    {
+      "zone": "BRT3",
+      "cn": "美洲/福塔莱萨",
+      "en": "America/Fortaleza"
+    },
+    {
+      "zone": "AST4ADT,M3.2.0,M11.1.0",
+      "cn": "美洲/格莱斯贝",
+      "en": "America/Glace Bay"
+    },
+    {
+      "zone": "AST4ADT,M3.2.0,M11.1.0",
+      "cn": "美洲/古斯湾",
+      "en": "America/Goose Bay"
+    },
+    {
+      "zone": "EST5EDT,M3.2.0,M11.1.0",
+      "cn": "美洲/大特克",
+      "en": "America/Grand Turk"
+    },
+    {
+      "zone": "AST4",
+      "cn": "美洲/格林纳达",
+      "en": "America/Grenada"
+    },
+    {
+      "zone": "AST4",
+      "cn": "美洲/瓜德罗普岛",
+      "en": "America/Guadeloupe"
+    },
+    {
+      "zone": "CST6",
+      "cn": "美洲/危地马拉",
+      "en": "America/Guatemala"
+    },
+    {
+      "zone": "ECT5",
+      "cn": "美洲/瓜亚基尔",
+      "en": "America/Guayaquil"
+    },
+    {
+      "zone": "GYT4",
+      "cn": "美洲/圭亚那",
+      "en": "America/Guyana"
+    },
+    {
+      "zone": "AST4ADT,M3.2.0,M11.1.0",
+      "cn": "美洲/哈利法克斯",
+      "en": "America/Halifax"
+    },
+    {
+      "zone": "CST5CDT,M3.2.0/0,M10.5.0/1",
+      "cn": "美洲/哈瓦那",
+      "en": "America/Havana"
+    },
+    {
+      "zone": "MST7",
+      "cn": "美洲/埃莫西约",
+      "en": "America/Hermosillo"
+    },
+    {
+      "zone": "EST5EDT,M3.2.0,M11.1.0",
+      "cn": "美国/印第安纳州/印第安纳波利斯",
+      "en": "America/Indiana/Indianapolis"
+    },
+    {
+      "zone": "CST6CDT,M3.2.0,M11.1.0",
+      "cn": "美洲/印第安纳/诺克斯",
+      "en": "America/Indiana/Knox"
+    },
+    {
+      "zone": "EST5EDT,M3.2.0,M11.1.0",
+      "cn": "美洲/印第安纳/马伦戈",
+      "en": "America/Indiana/Marengo"
+    },
+    {
+      "zone": "EST5EDT,M3.2.0,M11.1.0",
+      "cn": "美洲/印第安纳/圣彼得堡",
+      "en": "America/Indiana/Petersburg"
+    },
+    {
+      "zone": "CST6CDT,M3.2.0,M11.1.0",
+      "cn": "美国/印第安纳州/特尔市",
+      "en": "America/Indiana/Tell City"
+    },
+    {
+      "zone": "EST5EDT,M3.2.0,M11.1.0",
+      "cn": "美国/印第安纳州/韦韦",
+      "en": "America/Indiana/Vevay"
+    },
+    {
+      "zone": "EST5EDT,M3.2.0,M11.1.0",
+      "cn": "美国/印第安纳州/文森斯",
+      "en": "America/Indiana/Vincennes"
+    },
+    {
+      "zone": "EST5EDT,M3.2.0,M11.1.0",
+      "cn": "美洲/印第安纳/威纳马克",
+      "en": "America/Indiana/Winamac"
+    },
+    {
+      "zone": "MST7MDT,M3.2.0,M11.1.0",
+      "cn": "美洲/伊努维克",
+      "en": "America/Inuvik"
+    },
+    {
+      "zone": "EST5EDT,M3.2.0,M11.1.0",
+      "cn": "美洲/伊卡卢伊特",
+      "en": "America/Iqaluit"
+    },
+    {
+      "zone": "EST5",
+      "cn": "美洲/牙买加",
+      "en": "America/Jamaica"
+    },
+    {
+      "zone": "AKST9AKDT,M3.2.0,M11.1.0",
+      "cn": "美洲/朱诺",
+      "en": "America/Juneau"
+    },
+    {
+      "zone": "EST5EDT,M3.2.0,M11.1.0",
+      "cn": "美洲/肯塔基/路易斯维尔",
+      "en": "America/Kentucky/Louisville"
+    },
+    {
+      "zone": "EST5EDT,M3.2.0,M11.1.0",
+      "cn": "美国/肯塔基州/蒙蒂塞洛",
+      "en": "America/Kentucky/Monticello"
+    },
+    {
+      "zone": "AST4",
+      "cn": "美洲/克拉伦代克",
+      "en": "America/Kralendijk"
+    },
+    {
+      "zone": "BOT4",
+      "cn": "美洲/拉巴斯",
+      "en": "America/La Paz"
+    },
+    {
+      "zone": "PET5",
+      "cn": "美洲/利马",
+      "en": "America/Lima"
+    },
+    {
+      "zone": "PST8PDT,M3.2.0,M11.1.0",
+      "cn": "美国/洛杉矶",
+      "en": "America/Los Angeles"
+    },
+    {
+      "zone": "AST4",
+      "cn": "美洲/洛尔普林斯",
+      "en": "America/Lower Princes"
+    },
+    {
+      "zone": "BRT3",
+      "cn": "美洲/马塞约",
+      "en": "America/Maceio"
+    },
+    {
+      "zone": "CST6",
+      "cn": "美洲/马那瓜",
+      "en": "America/Managua"
+    },
+    {
+      "zone": "AMT4",
+      "cn": "美洲/马瑙斯",
+      "en": "America/Manaus"
+    },
+    {
+      "zone": "AST4",
+      "cn": "美洲/马里戈特",
+      "en": "America/Marigot"
+    },
+    {
+      "zone": "AST4",
+      "cn": "美洲/马提尼克",
+      "en": "America/Martinique"
+    },
+    {
+      "zone": "CST6CDT,M3.2.0,M11.1.0",
+      "cn": "美洲/马塔莫罗斯",
+      "en": "America/Matamoros"
+    },
+    {
+      "zone": "MST7MDT,M4.1.0,M10.5.0",
+      "cn": "美洲/马萨特兰",
+      "en": "America/Mazatlan"
+    },
+    {
+      "zone": "CST6CDT,M3.2.0,M11.1.0",
+      "cn": "美洲/梅诺米尼",
+      "en": "America/Menominee"
+    },
+    {
+      "zone": "CST6CDT,M4.1.0,M10.5.0",
+      "cn": "美洲/梅里达",
+      "en": "America/Merida"
+    },
+    {
+      "zone": "MeST8",
+      "cn": "美洲/梅特拉卡特拉",
+      "en": "America/Metlakatla"
+    },
+    {
+      "zone": "CST6CDT,M4.1.0,M10.5.0",
+      "cn": "美洲/墨西哥城",
+      "en": "America/Mexico City"
+    },
+    {
+      "zone": "PMST3PMDT,M3.2.0,M11.1.0",
+      "cn": "美洲/密克隆",
+      "en": "America/Miquelon"
+    },
+    {
+      "zone": "AST4ADT,M3.2.0,M11.1.0",
+      "cn": "美洲/蒙克顿",
+      "en": "America/Moncton"
+    },
+    {
+      "zone": "CST6CDT,M4.1.0,M10.5.0",
+      "cn": "美洲/蒙特雷",
+      "en": "America/Monterrey"
+    },
+    {
+      "zone": "UYT3UYST,M10.1.0,M3.2.0",
+      "cn": "美洲/蒙得维的亚",
+      "en": "America/Montevideo"
+    },
+    {
+      "zone": "EST5EDT,M3.2.0,M11.1.0",
+      "cn": "美洲/蒙特利尔",
+      "en": "America/Montreal"
+    },
+    {
+      "zone": "AST4",
+      "cn": "美洲/蒙特塞拉特",
+      "en": "America/Montserrat"
+    },
+    {
+      "zone": "EST5EDT,M3.2.0,M11.1.0",
+      "cn": "美洲/拿骚",
+      "en": "America/Nassau"
+    },
+    {
+      "zone": "EST5EDT,M3.2.0,M11.1.0",
+      "cn": "美国/纽约",
+      "en": "America/New York"
+    },
+    {
+      "zone": "EST5EDT,M3.2.0,M11.1.0",
+      "cn": "美洲/尼皮贡",
+      "en": "America/Nipigon"
+    },
+    {
+      "zone": "AKST9AKDT,M3.2.0,M11.1.0",
+      "cn": "美洲/诺姆",
+      "en": "America/Nome"
+    },
+    {
+      "zone": "FNT2",
+      "cn": "美洲/诺罗尼亚",
+      "en": "America/Noronha"
+    },
+    {
+      "zone": "CST6CDT,M3.2.0,M11.1.0",
+      "cn": "美洲/北达科他州/比尤拉",
+      "en": "America/North Dakota/Beulah"
+    },
+    {
+      "zone": "CST6CDT,M3.2.0,M11.1.0",
+      "cn": "美洲/北达科他/中心",
+      "en": "America/North Dakota/Center"
+    },
+    {
+      "zone": "CST6CDT,M3.2.0,M11.1.0",
+      "cn": "美洲/北达科他州/新塞勒姆",
+      "en": "America/North Dakota/New Salem"
+    },
+    {
+      "zone": "MST7MDT,M3.2.0,M11.1.0",
+      "cn": "美洲/奥希纳加",
+      "en": "America/Ojinaga"
+    },
+    {
+      "zone": "EST5",
+      "cn": "美洲/巴拿马",
+      "en": "America/Panama"
+    },
+    {
+      "zone": "EST5EDT,M3.2.0,M11.1.0",
+      "cn": "美洲/庞纳唐",
+      "en": "America/Pangnirtung"
+    },
+    {
+      "zone": "SRT3",
+      "cn": "美洲/帕拉马里博",
+      "en": "America/Paramaribo"
+    },
+    {
+      "zone": "MST7",
+      "cn": "美国/凤凰",
+      "en": "America/Phoenix"
+    },
+    {
+      "zone": "AST4",
+      "cn": "西班牙美洲/端口",
+      "en": "America/Port of Spain"
+    },
+    {
+      "zone": "EST5",
+      "cn": "美洲/太子港",
+      "en": "America/Port-au-Prince"
+    },
+    {
+      "zone": "AMT4",
+      "cn": "美洲/波多韦柳",
+      "en": "America/Porto Velho"
+    },
+    {
+      "zone": "AST4",
+      "cn": "美洲/波多黎各",
+      "en": "America/Puerto Rico"
+    },
+    {
+      "zone": "CST6CDT,M3.2.0,M11.1.0",
+      "cn": "美洲/多雨河",
+      "en": "America/Rainy River"
+    },
+    {
+      "zone": "CST6CDT,M3.2.0,M11.1.0",
+      "cn": "美洲/兰金因莱特",
+      "en": "America/Rankin Inlet"
+    },
+    {
+      "zone": "BRT3",
+      "cn": "美洲/累西腓",
+      "en": "America/Recife"
+    },
+    {
+      "zone": "CST6",
+      "cn": "美洲/里贾纳",
+      "en": "America/Regina"
+    },
+    {
+      "zone": "CST6CDT,M3.2.0,M11.1.0",
+      "cn": "美洲/坚决",
+      "en": "America/Resolute"
+    },
+    {
+      "zone": "AMT4",
+      "cn": "美洲/里奥布兰科",
+      "en": "America/Rio Branco"
+    },
+    {
+      "zone": "PST8PDT,M4.1.0,M10.5.0",
+      "cn": "美国/圣伊莎贝尔",
+      "en": "America/Santa Isabel"
+    },
+    {
+      "zone": "BRT3",
+      "cn": "美洲/圣塔伦",
+      "en": "America/Santarem"
+    },
+    {
+      "zone": "AST4",
+      "cn": "美洲/圣多明各",
+      "en": "America/Santo Domingo"
+    },
+    {
+      "zone": "BRT3BRST,M10.3.0/0,M2.3.0/0",
+      "cn": "美洲/圣保罗",
+      "en": "America/Sao Paulo"
+    },
+    {
+      "zone": "EGT1EGST,M3.5.0/0,M10.5.0/1",
+      "cn": "美洲/斯科斯比松",
+      "en": "America/Scoresbysund"
+    },
+    {
+      "zone": "MST7MDT,M3.2.0,M11.1.0",
+      "cn": "美洲/希普罗克",
+      "en": "America/Shiprock"
+    },
+    {
+      "zone": "AKST9AKDT,M3.2.0,M11.1.0",
+      "cn": "美洲/锡特卡",
+      "en": "America/Sitka"
+    },
+    {
+      "zone": "AST4",
+      "cn": "美洲/圣巴泰勒米",
+      "en": "America/St Barthelemy"
+    },
+    {
+      "zone": "NST3:30NDT,M3.2.0,M11.1.0",
+      "cn": "美洲/圣约翰",
+      "en": "America/St Johns"
+    },
+    {
+      "zone": "AST4",
+      "cn": "美洲/圣基茨",
+      "en": "America/St Kitts"
+    },
+    {
+      "zone": "AST4",
+      "cn": "美洲/圣卢西亚",
+      "en": "America/St Lucia"
+    },
+    {
+      "zone": "AST4",
+      "cn": "美洲/圣托马斯",
+      "en": "America/St Thomas"
+    },
+    {
+      "zone": "AST4",
+      "cn": "美洲/圣文森特",
+      "en": "America/St Vincent"
+    },
+    {
+      "zone": "CST6",
+      "cn": "美洲/斯威夫特卡伦特",
+      "en": "America/Swift Current"
+    },
+    {
+      "zone": "CST6",
+      "cn": "美洲/特古西加尔巴",
+      "en": "America/Tegucigalpa"
+    },
+    {
+      "zone": "AST4ADT,M3.2.0,M11.1.0",
+      "cn": "美洲/图勒",
+      "en": "America/Thule"
+    },
+    {
+      "zone": "EST5EDT,M3.2.0,M11.1.0",
+      "cn": "美洲/桑德贝",
+      "en": "America/Thunder Bay"
+    },
+    {
+      "zone": "PST8PDT,M3.2.0,M11.1.0",
+      "cn": "美洲/蒂华纳",
+      "en": "America/Tijuana"
+    },
+    {
+      "zone": "EST5EDT,M3.2.0,M11.1.0",
+      "cn": "美洲/多伦多",
+      "en": "America/Toronto"
+    },
+    {
+      "zone": "AST4",
+      "cn": "美洲/托尔托拉",
+      "en": "America/Tortola"
+    },
+    {
+      "zone": "PST8PDT,M3.2.0,M11.1.0",
+      "cn": "美洲/温哥华",
+      "en": "America/Vancouver"
+    },
+    {
+      "zone": "PST8PDT,M3.2.0,M11.1.0",
+      "cn": "美洲/白马",
+      "en": "America/Whitehorse"
+    },
+    {
+      "zone": "CST6CDT,M3.2.0,M11.1.0",
+      "cn": "美洲/温尼伯",
+      "en": "America/Winnipeg"
+    },
+    {
+      "zone": "AKST9AKDT,M3.2.0,M11.1.0",
+      "cn": "美洲/亚库塔特",
+      "en": "America/Yakutat"
+    },
+    {
+      "zone": "MST7MDT,M3.2.0,M11.1.0",
+      "cn": "美洲/耶洛奈夫",
+      "en": "America/Yellowknife"
+    },
+    {
+      "zone": "WST-8",
+      "cn": "南极洲/凯西",
+      "en": "Antarctica/Casey"
+    },
+    {
+      "zone": "DAVT-7",
+      "cn": "南极洲/戴维斯",
+      "en": "Antarctica/Davis"
+    },
+    {
+      "zone": "DDUT-10",
+      "cn": "南极洲/杜蒙杜尔维尔",
+      "en": "Antarctica/DumontDUrville"
+    },
+    {
+      "zone": "MIST-11",
+      "cn": "南极洲/麦格理",
+      "en": "Antarctica/Macquarie"
+    },
+    {
+      "zone": "MAWT-5",
+      "cn": "南极洲/莫森",
+      "en": "Antarctica/Mawson"
+    },
+    {
+      "zone": "NZST-12NZDT,M9.5.0,M4.1.0/3",
+      "cn": "南极洲/麦克默多",
+      "en": "Antarctica/McMurdo"
+    },
+    {
+      "zone": "ROTT3",
+      "cn": "南极洲/路德",
+      "en": "Antarctica/Rothera"
+    },
+    {
+      "zone": "NZST-12NZDT,M9.5.0,M4.1.0/3",
+      "cn": "南极洲/南极",
+      "en": "Antarctica/South Pole"
+    },
+    {
+      "zone": "SYOT-3",
+      "cn": "南极洲/昭和",
+      "en": "Antarctica/Syowa"
+    },
+    {
+      "zone": "VOST-6",
+      "cn": "南极洲/沃斯托克",
+      "en": "Antarctica/Vostok"
+    },
+    {
+      "zone": "CET-1CEST,M3.5.0,M10.5.0/3",
+      "cn": "北极/朗伊尔城",
+      "en": "Arctic/Longyearbyen"
+    },
+    {
+      "zone": "AST-3",
+      "cn": "亚洲/亚丁",
+      "en": "Asia/Aden"
+    },
+    {
+      "zone": "ALMT-6",
+      "cn": "亚洲/阿拉木图",
+      "en": "Asia/Almaty"
+    },
+    {
+      "zone": "ANAT-12",
+      "cn": "亚洲/阿纳德尔",
+      "en": "Asia/Anadyr"
+    },
+    {
+      "zone": "AQTT-5",
+      "cn": "亚洲/阿克陶",
+      "en": "Asia/Aqtau"
+    },
+    {
+      "zone": "AQTT-5",
+      "cn": "亚洲/阿克托别",
+      "en": "Asia/Aqtobe"
+    },
+    {
+      "zone": "TMT-5",
+      "cn": "亚洲/阿什哈巴德",
+      "en": "Asia/Ashgabat"
+    },
+    {
+      "zone": "AST-3",
+      "cn": "亚洲/巴格达",
+      "en": "Asia/Baghdad"
+    },
+    {
+      "zone": "AST-3",
+      "cn": "亚洲/巴林",
+      "en": "Asia/Bahrain"
+    },
+    {
+      "zone": "AZT-4AZST,M3.5.0/4,M10.5.0/5",
+      "cn": "亚洲/巴库",
+      "en": "Asia/Baku"
+    },
+    {
+      "zone": "ICT-7",
+      "cn": "亚洲/曼谷",
+      "en": "Asia/Bangkok"
+    },
+    {
+      "zone": "EET-2EEST,M3.5.0/0,M10.5.0/0",
+      "cn": "亚洲/贝鲁特",
+      "en": "Asia/Beirut"
+    },
+    {
+      "zone": "KGT-6",
+      "cn": "亚洲/比什凯克",
+      "en": "Asia/Bishkek"
+    },
+    {
+      "zone": "BNT-8",
+      "cn": "亚洲/文莱",
+      "en": "Asia/Brunei"
+    },
+    {
+      "zone": "CHOT-8",
+      "cn": "亚洲/乔巴山",
+      "en": "Asia/Choibalsan"
+    },
+    {
+      "zone": "CST-8",
+      "cn": "亚洲/重庆",
+      "en": "Asia/Chongqing"
+    },
+    {
+      "zone": "IST-5:30",
+      "cn": "亚洲/科伦坡",
+      "en": "Asia/Colombo"
+    },
+    {
+      "zone": "EET-2EEST,M4.1.5/0,M10.5.5/0",
+      "cn": "亚洲/大马士革",
+      "en": "Asia/Damascus"
+    },
+    {
+      "zone": "BDT-6",
+      "cn": "亚洲/达卡",
+      "en": "Asia/Dhaka"
+    },
+    {
+      "zone": "TLT-9",
+      "cn": "亚洲/帝力",
+      "en": "Asia/Dili"
+    },
+    {
+      "zone": "GST-4",
+      "cn": "亚洲/迪拜",
+      "en": "Asia/Dubai"
+    },
+    {
+      "zone": "TJT-5",
+      "cn": "亚洲/杜尚别",
+      "en": "Asia/Dushanbe"
+    },
+    {
+      "zone": "EET-2",
+      "cn": "亚洲/加沙",
+      "en": "Asia/Gaza"
+    },
+    {
+      "zone": "CST-8",
+      "cn": "亚洲/哈尔滨",
+      "en": "Asia/Harbin"
+    },
+    {
+      "zone": "EET-2",
+      "cn": "亚洲/希伯伦",
+      "en": "Asia/Hebron"
+    },
+    {
+      "zone": "ICT-7",
+      "cn": "亚洲/胡志明",
+      "en": "Asia/Ho Chi Minh"
+    },
+    {
+      "zone": "HKT-8",
+      "cn": "亚洲/香港",
+      "en": "Asia/Hong Kong"
+    },
+    {
+      "zone": "HOVT-7",
+      "cn": "亚洲/科布多",
+      "en": "Asia/Hovd"
+    },
+    {
+      "zone": "IRKT-9",
+      "cn": "亚洲/伊尔库茨克",
+      "en": "Asia/Irkutsk"
+    },
+    {
+      "zone": "WIT-7",
+      "cn": "亚洲/雅加达",
+      "en": "Asia/Jakarta"
+    },
+    {
+      "zone": "EIT-9",
+      "cn": "亚洲/查亚普拉",
+      "en": "Asia/Jayapura"
+    },
+    {
+      "zone": "AFT-4:30",
+      "cn": "亚洲/喀布尔",
+      "en": "Asia/Kabul"
+    },
+    {
+      "zone": "PETT-12",
+      "cn": "亚洲/堪察加",
+      "en": "Asia/Kamchatka"
+    },
+    {
+      "zone": "PKT-5",
+      "cn": "亚洲/卡拉奇",
+      "en": "Asia/Karachi"
+    },
+    {
+      "zone": "CST-8",
+      "cn": "亚洲/喀什",
+      "en": "Asia/Kashgar"
+    },
+    {
+      "zone": "NPT-5:45",
+      "cn": "亚洲/加德满都",
+      "en": "Asia/Kathmandu"
+    },
+    {
+      "zone": "IST-5:30",
+      "cn": "亚洲/加尔各答",
+      "en": "Asia/Kolkata"
+    },
+    {
+      "zone": "KRAT-8",
+      "cn": "亚洲/克拉斯诺亚尔斯克",
+      "en": "Asia/Krasnoyarsk"
+    },
+    {
+      "zone": "MYT-8",
+      "cn": "亚洲/吉隆坡",
+      "en": "Asia/Kuala Lumpur"
+    },
+    {
+      "zone": "MYT-8",
+      "cn": "亚洲/古晋",
+      "en": "Asia/Kuching"
+    },
+    {
+      "zone": "AST-3",
+      "cn": "亚洲/科威特",
+      "en": "Asia/Kuwait"
+    },
+    {
+      "zone": "CST-8",
+      "cn": "亚洲/澳门",
+      "en": "Asia/Macau"
+    },
+    {
+      "zone": "MAGT-12",
+      "cn": "亚洲/马加丹",
+      "en": "Asia/Magadan"
+    },
+    {
+      "zone": "CIT-8",
+      "cn": "亚洲/望加锡",
+      "en": "Asia/Makassar"
+    },
+    {
+      "zone": "PHT-8",
+      "cn": "亚洲/马尼拉",
+      "en": "Asia/Manila"
+    },
+    {
+      "zone": "GST-4",
+      "cn": "亚洲/马斯喀特",
+      "en": "Asia/Muscat"
+    },
+    {
+      "zone": "EET-2EEST,M3.5.0/3,M10.5.0/4",
+      "cn": "亚洲/尼科西亚",
+      "en": "Asia/Nicosia"
+    },
+    {
+      "zone": "NOVT-7",
+      "cn": "亚洲/新库兹涅茨克",
+      "en": "Asia/Novokuznetsk"
+    },
+    {
+      "zone": "NOVT-7",
+      "cn": "亚洲/新西伯利亚",
+      "en": "Asia/Novosibirsk"
+    },
+    {
+      "zone": "OMST-7",
+      "cn": "亚洲/鄂木斯克",
+      "en": "Asia/Omsk"
+    },
+    {
+      "zone": "ORAT-5",
+      "cn": "亚洲/口头",
+      "en": "Asia/Oral"
+    },
+    {
+      "zone": "ICT-7",
+      "cn": "亚洲/金边",
+      "en": "Asia/Phnom Penh"
+    },
+    {
+      "zone": "WIT-7",
+      "cn": "亚洲/坤甸",
+      "en": "Asia/Pontianak"
+    },
+    {
+      "zone": "KST-9",
+      "cn": "亚洲/平壤",
+      "en": "Asia/Pyongyang"
+    },
+    {
+      "zone": "AST-3",
+      "cn": "亚洲/卡塔尔",
+      "en": "Asia/Qatar"
+    },
+    {
+      "zone": "QYZT-6",
+      "cn": "亚洲/克孜勒奥尔达",
+      "en": "Asia/Qyzylorda"
+    },
+    {
+      "zone": "MMT-6:30",
+      "cn": "亚洲/仰光",
+      "en": "Asia/Rangoon"
+    },
+    {
+      "zone": "AST-3",
+      "cn": "亚洲/利雅得",
+      "en": "Asia/Riyadh"
+    },
+    {
+      "zone": "SAKT-11",
+      "cn": "亚洲/萨哈林",
+      "en": "Asia/Sakhalin"
+    },
+    {
+      "zone": "UZT-5",
+      "cn": "亚洲/撒马尔罕",
+      "en": "Asia/Samarkand"
+    },
+    {
+      "zone": "KST-9",
+      "cn": "亚洲/汉城",
+      "en": "Asia/Seoul"
+    },
+    {
+      "zone": "CST-8",
+      "cn": "亚洲/上海",
+      "en": "Asia/Shanghai"
+    },
+    {
+      "zone": "CST-8",
+      "cn": "亚洲/北京",
+      "en": "Asia/Beijing"
+    },
+    {
+      "zone": "SGT-8",
+      "cn": "亚洲/新加坡",
+      "en": "Asia/Singapore"
+    },
+    {
+      "zone": "CST-8",
+      "cn": "亚洲/台北",
+      "en": "Asia/Taipei"
+    },
+    {
+      "zone": "UZT-5",
+      "cn": "亚洲/塔什干",
+      "en": "Asia/Tashkent"
+    },
+    {
+      "zone": "GET-4",
+      "cn": "亚洲/第比利斯",
+      "en": "Asia/Tbilisi"
+    },
+    {
+      "zone": "BTT-6",
+      "cn": "亚洲/廷布",
+      "en": "Asia/Thimphu"
+    },
+    {
+      "zone": "JST-9",
+      "cn": "亚洲/东京",
+      "en": "Asia/Tokyo"
+    },
+    {
+      "zone": "ULAT-8",
+      "cn": "亚洲/乌兰巴托",
+      "en": "Asia/Ulaanbaatar"
+    },
+    {
+      "zone": "CST-8",
+      "cn": "亚洲/乌鲁木齐",
+      "en": "Asia/Urumqi"
+    },
+    {
+      "zone": "ICT-7",
+      "cn": "亚洲/万象",
+      "en": "Asia/Vientiane"
+    },
+    {
+      "zone": "VLAT-11",
+      "cn": "亚洲/符拉迪沃斯托克",
+      "en": "Asia/Vladivostok"
+    },
+    {
+      "zone": "YAKT-10",
+      "cn": "亚洲/雅库茨克",
+      "en": "Asia/Yakutsk"
+    },
+    {
+      "zone": "YEKT-6",
+      "cn": "亚洲/叶卡捷琳堡",
+      "en": "Asia/Yekaterinburg"
+    },
+    {
+      "zone": "AMT-4AMST,M3.5.0,M10.5.0/3",
+      "cn": "亚洲/埃里温",
+      "en": "Asia/Yerevan"
+    },
+    {
+      "zone": "AZOT1AZOST,M3.5.0/0,M10.5.0/1",
+      "cn": "大西洋/亚速尔群岛",
+      "en": "Atlantic/Azores"
+    },
+    {
+      "zone": "AST4ADT,M3.2.0,M11.1.0",
+      "cn": "大西洋/百慕大",
+      "en": "Atlantic/Bermuda"
+    },
+    {
+      "zone": "WET0WEST,M3.5.0/1,M10.5.0",
+      "cn": "大西洋/加那利",
+      "en": "Atlantic/Canary"
+    },
+    {
+      "zone": "CVT1",
+      "cn": "大西洋/佛得角",
+      "en": "Atlantic/Cape Verde"
+    },
+    {
+      "zone": "WET0WEST,M3.5.0/1,M10.5.0",
+      "cn": "大西洋/法罗",
+      "en": "Atlantic/Faroe"
+    },
+    {
+      "zone": "WET0WEST,M3.5.0/1,M10.5.0",
+      "cn": "大西洋/马德拉",
+      "en": "Atlantic/Madeira"
+    },
+    {
+      "zone": "GMT0",
+      "cn": "大西洋/雷克雅未克",
+      "en": "Atlantic/Reykjavik"
+    },
+    {
+      "zone": "GST2",
+      "cn": "大西洋/南乔治亚",
+      "en": "Atlantic/South Georgia"
+    },
+    {
+      "zone": "GMT0",
+      "cn": "大西洋/圣赫勒拿岛",
+      "en": "Atlantic/St Helena"
+    },
+    {
+      "zone": "FKT4FKST,M9.1.0,M4.3.0",
+      "cn": "大西洋/斯坦利",
+      "en": "Atlantic/Stanley"
+    },
+    {
+      "zone": "CST-9:30CST,M10.1.0,M4.1.0/3",
+      "cn": "澳大利亚/阿德莱德",
+      "en": "Australia/Adelaide"
+    },
+    {
+      "zone": "EST-10",
+      "cn": "澳大利亚/布里斯班",
+      "en": "Australia/Brisbane"
+    },
+    {
+      "zone": "CST-9:30CST,M10.1.0,M4.1.0/3",
+      "cn": "澳大利亚/布罗肯希尔",
+      "en": "Australia/Broken Hill"
+    },
+    {
+      "zone": "EST-10EST,M10.1.0,M4.1.0/3",
+      "cn": "澳大利亚/柯里",
+      "en": "Australia/Currie"
+    },
+    {
+      "zone": "CST-9:30",
+      "cn": "澳大利亚/达尔文",
+      "en": "Australia/Darwin"
+    },
+    {
+      "zone": "CWST-8:45",
+      "cn": "澳大利亚/尤克拉",
+      "en": "Australia/Eucla"
+    },
+    {
+      "zone": "EST-10EST,M10.1.0,M4.1.0/3",
+      "cn": "澳大利亚/霍巴特",
+      "en": "Australia/Hobart"
+    },
+    {
+      "zone": "EST-10",
+      "cn": "澳大利亚/林德曼",
+      "en": "Australia/Lindeman"
+    },
+    {
+      "zone": "LHST-10:30LHST-11,M10.1.0,M4.1.0",
+      "cn": "澳大利亚/豪勋爵",
+      "en": "Australia/Lord Howe"
+    },
+    {
+      "zone": "EST-10EST,M10.1.0,M4.1.0/3",
+      "cn": "澳大利亚/墨尔本",
+      "en": "Australia/Melbourne"
+    },
+    {
+      "zone": "WST-8",
+      "cn": "澳大利亚/珀斯",
+      "en": "Australia/Perth"
+    },
+    {
+      "zone": "EST-10EST,M10.1.0,M4.1.0/3",
+      "cn": "澳大利亚/悉尼",
+      "en": "Australia/Sydney"
+    },
+    {
+      "zone": "CET-1CEST,M3.5.0,M10.5.0/3",
+      "cn": "欧洲/阿姆斯特丹",
+      "en": "Europe/Amsterdam"
+    },
+    {
+      "zone": "CET-1CEST,M3.5.0,M10.5.0/3",
+      "cn": "欧洲/安道尔",
+      "en": "Europe/Andorra"
+    },
+    {
+      "zone": "EET-2EEST,M3.5.0/3,M10.5.0/4",
+      "cn": "欧洲/雅典",
+      "en": "Europe/Athens"
+    },
+    {
+      "zone": "CET-1CEST,M3.5.0,M10.5.0/3",
+      "cn": "欧洲/贝尔格莱德",
+      "en": "Europe/Belgrade"
+    },
+    {
+      "zone": "CET-1CEST,M3.5.0,M10.5.0/3",
+      "cn": "欧洲/柏林",
+      "en": "Europe/Berlin"
+    },
+    {
+      "zone": "CET-1CEST,M3.5.0,M10.5.0/3",
+      "cn": "欧洲/布拉迪斯拉发",
+      "en": "Europe/Bratislava"
+    },
+    {
+      "zone": "CET-1CEST,M3.5.0,M10.5.0/3",
+      "cn": "欧洲/布鲁塞尔",
+      "en": "Europe/Brussels"
+    },
+    {
+      "zone": "EET-2EEST,M3.5.0/3,M10.5.0/4",
+      "cn": "欧洲/布加勒斯特",
+      "en": "Europe/Bucharest"
+    },
+    {
+      "zone": "CET-1CEST,M3.5.0,M10.5.0/3",
+      "cn": "欧洲/布达佩斯",
+      "en": "Europe/Budapest"
+    },
+    {
+      "zone": "EET-2EEST,M3.5.0/3,M10.5.0/4",
+      "cn": "欧洲/基希讷乌",
+      "en": "Europe/Chisinau"
+    },
+    {
+      "zone": "CET-1CEST,M3.5.0,M10.5.0/3",
+      "cn": "欧洲/哥本哈根",
+      "en": "Europe/Copenhagen"
+    },
+    {
+      "zone": "GMT0IST,M3.5.0/1,M10.5.0",
+      "cn": "欧洲/都柏林",
+      "en": "Europe/Dublin"
+    },
+    {
+      "zone": "CET-1CEST,M3.5.0,M10.5.0/3",
+      "cn": "欧洲/直布罗陀",
+      "en": "Europe/Gibraltar"
+    },
+    {
+      "zone": "GMT0BST,M3.5.0/1,M10.5.0",
+      "cn": "欧洲/格恩西岛",
+      "en": "Europe/Guernsey"
+    },
+    {
+      "zone": "EET-2EEST,M3.5.0/3,M10.5.0/4",
+      "cn": "欧洲/赫尔辛基",
+      "en": "Europe/Helsinki"
+    },
+    {
+      "zone": "GMT0BST,M3.5.0/1,M10.5.0",
+      "cn": "人的欧洲/岛",
+      "en": "Europe/Isle of Man"
+    },
+    {
+      "zone": "EET-2EEST,M3.5.0/3,M10.5.0/4",
+      "cn": "欧洲/伊斯坦布尔",
+      "en": "Europe/Istanbul"
+    },
+    {
+      "zone": "GMT0BST,M3.5.0/1,M10.5.0",
+      "cn": "欧洲/新泽西",
+      "en": "Europe/Jersey"
+    },
+    {
+      "zone": "FET-3",
+      "cn": "欧洲/加里宁格勒",
+      "en": "Europe/Kaliningrad"
+    },
+    {
+      "zone": "EET-2EEST,M3.5.0/3,M10.5.0/4",
+      "cn": "欧洲/基辅",
+      "en": "Europe/Kiev"
+    },
+    {
+      "zone": "WET0WEST,M3.5.0/1,M10.5.0",
+      "cn": "欧洲/里斯本",
+      "en": "Europe/Lisbon"
+    },
+    {
+      "zone": "CET-1CEST,M3.5.0,M10.5.0/3",
+      "cn": "欧洲/卢布尔雅那",
+      "en": "Europe/Ljubljana"
+    },
+    {
+      "zone": "GMT0BST,M3.5.0/1,M10.5.0",
+      "cn": "欧洲/伦敦",
+      "en": "Europe/London"
+    },
+    {
+      "zone": "CET-1CEST,M3.5.0,M10.5.0/3",
+      "cn": "欧洲/卢森堡",
+      "en": "Europe/Luxembourg"
+    },
+    {
+      "zone": "CET-1CEST,M3.5.0,M10.5.0/3",
+      "cn": "欧洲/马德里",
+      "en": "Europe/Madrid"
+    },
+    {
+      "zone": "CET-1CEST,M3.5.0,M10.5.0/3",
+      "cn": "欧洲/马耳他",
+      "en": "Europe/Malta"
+    },
+    {
+      "zone": "EET-2EEST,M3.5.0/3,M10.5.0/4",
+      "cn": "欧洲/玛丽港",
+      "en": "Europe/Mariehamn"
+    },
+    {
+      "zone": "FET-3",
+      "cn": "欧洲/明斯克",
+      "en": "Europe/Minsk"
+    },
+    {
+      "zone": "CET-1CEST,M3.5.0,M10.5.0/3",
+      "cn": "欧洲/摩纳哥",
+      "en": "Europe/Monaco"
+    },
+    {
+      "zone": "MSK-4",
+      "cn": "欧洲/莫斯科",
+      "en": "Europe/Moscow"
+    },
+    {
+      "zone": "CET-1CEST,M3.5.0,M10.5.0/3",
+      "cn": "欧洲/奥斯陆",
+      "en": "Europe/Oslo"
+    },
+    {
+      "zone": "CET-1CEST,M3.5.0,M10.5.0/3",
+      "cn": "欧洲/巴黎",
+      "en": "Europe/Paris"
+    },
+    {
+      "zone": "CET-1CEST,M3.5.0,M10.5.0/3",
+      "cn": "欧洲/波德戈里察",
+      "en": "Europe/Podgorica"
+    },
+    {
+      "zone": "CET-1CEST,M3.5.0,M10.5.0/3",
+      "cn": "欧洲/布拉格",
+      "en": "Europe/Prague"
+    },
+    {
+      "zone": "EET-2EEST,M3.5.0/3,M10.5.0/4",
+      "cn": "欧洲/里加",
+      "en": "Europe/Riga"
+    },
+    {
+      "zone": "CET-1CEST,M3.5.0,M10.5.0/3",
+      "cn": "欧洲/罗马",
+      "en": "Europe/Rome"
+    },
+    {
+      "zone": "SAMT-4",
+      "cn": "欧洲/萨马拉",
+      "en": "Europe/Samara"
+    },
+    {
+      "zone": "CET-1CEST,M3.5.0,M10.5.0/3",
+      "cn": "欧洲/圣马力诺",
+      "en": "Europe/San Marino"
+    },
+    {
+      "zone": "CET-1CEST,M3.5.0,M10.5.0/3",
+      "cn": "欧洲/萨拉热窝",
+      "en": "Europe/Sarajevo"
+    },
+    {
+      "zone": "EET-2EEST,M3.5.0/3,M10.5.0/4",
+      "cn": "欧洲/辛菲罗波尔",
+      "en": "Europe/Simferopol"
+    },
+    {
+      "zone": "CET-1CEST,M3.5.0,M10.5.0/3",
+      "cn": "欧洲/斯科普里",
+      "en": "Europe/Skopje"
+    },
+    {
+      "zone": "EET-2EEST,M3.5.0/3,M10.5.0/4",
+      "cn": "欧洲/索非亚",
+      "en": "Europe/Sofia"
+    },
+    {
+      "zone": "CET-1CEST,M3.5.0,M10.5.0/3",
+      "cn": "欧洲/斯德哥尔摩",
+      "en": "Europe/Stockholm"
+    },
+    {
+      "zone": "EET-2EEST,M3.5.0/3,M10.5.0/4",
+      "cn": "欧洲/塔林",
+      "en": "Europe/Tallinn"
+    },
+    {
+      "zone": "CET-1CEST,M3.5.0,M10.5.0/3",
+      "cn": "欧洲/地拉那",
+      "en": "Europe/Tirane"
+    },
+    {
+      "zone": "EET-2EEST,M3.5.0/3,M10.5.0/4",
+      "cn": "欧洲/乌日哥罗德",
+      "en": "Europe/Uzhgorod"
+    },
+    {
+      "zone": "CET-1CEST,M3.5.0,M10.5.0/3",
+      "cn": "欧洲/瓦杜兹",
+      "en": "Europe/Vaduz"
+    },
+    {
+      "zone": "CET-1CEST,M3.5.0,M10.5.0/3",
+      "cn": "欧洲/梵蒂冈",
+      "en": "Europe/Vatican"
+    },
+    {
+      "zone": "CET-1CEST,M3.5.0,M10.5.0/3",
+      "cn": "欧洲/维也纳",
+      "en": "Europe/Vienna"
+    },
+    {
+      "zone": "EET-2EEST,M3.5.0/3,M10.5.0/4",
+      "cn": "欧洲/维尔纽斯",
+      "en": "Europe/Vilnius"
+    },
+    {
+      "zone": "VOLT-4",
+      "cn": "欧洲/伏尔加格勒",
+      "en": "Europe/Volgograd"
+    },
+    {
+      "zone": "CET-1CEST,M3.5.0,M10.5.0/3",
+      "cn": "欧洲/华沙",
+      "en": "Europe/Warsaw"
+    },
+    {
+      "zone": "CET-1CEST,M3.5.0,M10.5.0/3",
+      "cn": "欧洲/萨格勒布",
+      "en": "Europe/Zagreb"
+    },
+    {
+      "zone": "EET-2EEST,M3.5.0/3,M10.5.0/4",
+      "cn": "欧洲/扎波罗热",
+      "en": "Europe/Zaporozhye"
+    },
+    {
+      "zone": "CET-1CEST,M3.5.0,M10.5.0/3",
+      "cn": "欧洲/苏黎世",
+      "en": "Europe/Zurich"
+    },
+    {
+      "zone": "EAT-3",
+      "cn": "印度洋/塔那那利佛",
+      "en": "Indian/Antananarivo"
+    },
+    {
+      "zone": "IOT-6",
+      "cn": "印度/查戈斯",
+      "en": "Indian/Chagos"
+    },
+    {
+      "zone": "CXT-7",
+      "cn": "印度/圣诞节",
+      "en": "Indian/Christmas"
+    },
+    {
+      "zone": "CCT-6:30",
+      "cn": "印度/科科斯",
+      "en": "Indian/Cocos"
+    },
+    {
+      "zone": "EAT-3",
+      "cn": "印度/科摩罗",
+      "en": "Indian/Comoro"
+    },
+    {
+      "zone": "TFT-5",
+      "cn": "印度/凯尔盖朗",
+      "en": "Indian/Kerguelen"
+    },
+    {
+      "zone": "SCT-4",
+      "cn": "印度/马埃",
+      "en": "Indian/Mahe"
+    },
+    {
+      "zone": "MVT-5",
+      "cn": "印度/马尔代夫",
+      "en": "Indian/Maldives"
+    },
+    {
+      "zone": "MUT-4",
+      "cn": "印度/毛里求斯",
+      "en": "Indian/Mauritius"
+    },
+    {
+      "zone": "EAT-3",
+      "cn": "印度/马约特",
+      "en": "Indian/Mayotte"
+    },
+    {
+      "zone": "RET-4",
+      "cn": "印度洋/留尼汪",
+      "en": "Indian/Reunion"
+    },
+    {
+      "zone": "WST-13",
+      "cn": "太平洋/阿皮亚",
+      "en": "Pacific/Apia"
+    },
+    {
+      "zone": "NZST-12NZDT,M9.5.0,M4.1.0/3",
+      "cn": "太平洋/奥克兰",
+      "en": "Pacific/Auckland"
+    },
+    {
+      "zone": "CHAST-12:45CHADT,M9.5.0/2:45,M4.1.0/3:45",
+      "cn": "太平洋/查塔姆",
+      "en": "Pacific/Chatham"
+    },
+    {
+      "zone": "CHUT-10",
+      "cn": "太平洋/特鲁克",
+      "en": "Pacific/Chuuk"
+    },
+    {
+      "zone": "VUT-11",
+      "cn": "太平洋/埃法特",
+      "en": "Pacific/Efate"
+    },
+    {
+      "zone": "PHOT-13",
+      "cn": "太平洋/恩德伯里",
+      "en": "Pacific/Enderbury"
+    },
+    {
+      "zone": "TKT10",
+      "cn": "太平洋/法考福",
+      "en": "Pacific/Fakaofo"
+    },
+    {
+      "zone": "FJT-12",
+      "cn": "太平洋/斐济",
+      "en": "Pacific/Fiji"
+    },
+    {
+      "zone": "TVT-12",
+      "cn": "太平洋/富纳富提",
+      "en": "Pacific/Funafuti"
+    },
+    {
+      "zone": "GALT6",
+      "cn": "太平洋/加拉帕戈斯",
+      "en": "Pacific/Galapagos"
+    },
+    {
+      "zone": "GAMT9",
+      "cn": "太平洋/甘比尔",
+      "en": "Pacific/Gambier"
+    },
+    {
+      "zone": "SBT-11",
+      "cn": "太平洋/瓜达尔卡纳尔岛",
+      "en": "Pacific/Guadalcanal"
+    },
+    {
+      "zone": "ChST-10",
+      "cn": "太平洋/关岛",
+      "en": "Pacific/Guam"
+    },
+    {
+      "zone": "HST10",
+      "cn": "太平洋/火奴鲁鲁",
+      "en": "Pacific/Honolulu"
+    },
+    {
+      "zone": "HST10",
+      "cn": "太平洋/约翰斯顿",
+      "en": "Pacific/Johnston"
+    },
+    {
+      "zone": "LINT-14",
+      "cn": "太平洋/克里斯马斯",
+      "en": "Pacific/Kiritimati"
+    },
+    {
+      "zone": "KOST-11",
+      "cn": "太平洋/科斯雷",
+      "en": "Pacific/Kosrae"
+    },
+    {
+      "zone": "MHT-12",
+      "cn": "太平洋/夸贾林",
+      "en": "Pacific/Kwajalein"
+    },
+    {
+      "zone": "MHT-12",
+      "cn": "太平洋/马朱罗",
+      "en": "Pacific/Majuro"
+    },
+    {
+      "zone": "MART9:30",
+      "cn": "太平洋/马克萨斯",
+      "en": "Pacific/Marquesas"
+    },
+    {
+      "zone": "SST11",
+      "cn": "太平洋/中途岛",
+      "en": "Pacific/Midway"
+    },
+    {
+      "zone": "NRT-12",
+      "cn": "太平洋/瑙鲁",
+      "en": "Pacific/Nauru"
+    },
+    {
+      "zone": "NUT11",
+      "cn": "太平洋/纽埃",
+      "en": "Pacific/Niue"
+    },
+    {
+      "zone": "NFT-11:30",
+      "cn": "太平洋/诺福克",
+      "en": "Pacific/Norfolk"
+    },
+    {
+      "zone": "NCT-11",
+      "cn": "太平洋/努美阿",
+      "en": "Pacific/Noumea"
+    },
+    {
+      "zone": "SST11",
+      "cn": "太平洋/帕果帕果",
+      "en": "Pacific/Pago Pago"
+    },
+    {
+      "zone": "PWT-9",
+      "cn": "太平洋/帕劳",
+      "en": "Pacific/Palau"
+    },
+    {
+      "zone": "PST8",
+      "cn": "太平洋/皮特凯恩",
+      "en": "Pacific/Pitcairn"
+    },
+    {
+      "zone": "PONT-11",
+      "cn": "太平洋/波纳佩",
+      "en": "Pacific/Pohnpei"
+    },
+    {
+      "zone": "PGT-10",
+      "cn": "太平洋/莫尔兹比港",
+      "en": "Pacific/Port Moresby"
+    },
+    {
+      "zone": "CKT10",
+      "cn": "太平洋/拉罗汤加",
+      "en": "Pacific/Rarotonga"
+    },
+    {
+      "zone": "ChST-10",
+      "cn": "太平洋/塞班岛",
+      "en": "Pacific/Saipan"
+    },
+    {
+      "zone": "TAHT10",
+      "cn": "太平洋/塔希提",
+      "en": "Pacific/Tahiti"
+    },
+    {
+      "zone": "GILT-12",
+      "cn": "太平洋/塔拉瓦",
+      "en": "Pacific/Tarawa"
+    },
+    {
+      "zone": "TOT-13",
+      "cn": "太平洋/汤加塔布",
+      "en": "Pacific/Tongatapu"
+    },
+    {
+      "zone": "WAKT-12",
+      "cn": "太平洋/唤醒",
+      "en": "Pacific/Wake"
+    },
+    {
+      "zone": "WFT-12",
+      "cn": "太平洋/沃利斯",
+      "en": "Pacific/Wallis"
+    }
+  ]
+}

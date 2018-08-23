@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--zhangjianqiu,账户圆形头像-->
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+    <!--圆弧进度条-->
+
+    <!--首页widget 温湿度控件-->
+    <declare-styleable name="HumitureText">
+        <attr name="humStrokeColor" format="color"/>
+        <attr name="humStrokeWidth" format="dimension"/>
+        <attr name="humSolidColor" format="color"/>
+        <attr name="humText" format="string"/>
+        <attr name="humTextSize" format="dimension"/>
+        <attr name="humTextColor" format="color"/>
+    </declare-styleable>
+
+    <!--首页widget 密码输入控件-->
+    <declare-styleable name="PinCodeView">
+        <attr name="pinRingColor" format="color"/>
+        <attr name="pinCircleColor" format="color"/>
+        <attr name="pinCount" format="integer"/>
+        <attr name="pinRadius" format="dimension"/>
+    </declare-styleable>
+
+    <!-- 竖着的Seekbar -->
+    <declare-styleable name="VerticalSeekBar">
+        <attr name="seekBarRotation">
+            <!-- Clock wise - 90 deg; top = min, bottom = max -->
+            <enum name="CW90" value="90" />
+            <!-- Clock wise - 270 deg; bottom = min, top = max -->
+            <enum name="CW270" value="270" />
+        </attr>
+    </declare-styleable>
+
+    <!-- 回看界面的时间选择条 -->
+    <declare-styleable name="Record_Ruler">
+
+        <!-- 最小间距的宽度 -->
+        <attr name="min_unit_width" format="dimension" />
+        <!-- 线条的宽度 -->
+        <attr name="line_width" format="dimension" />
+        <!-- 中间线条的宽度 -->
+        <attr name="mid_line_width" format="dimension" />
+        <!-- 中间线三角形的宽度 -->
+        <attr name="triangle_line_width" format="dimension" />
+        <!-- 最短线条的高度 -->
+        <attr name="min_line_height" format="dimension" />
+        <!-- 选择对立布局 -->
+        <attr name="sides" format="boolean"></attr>
+        <!-- 左边选择的颜色 -->
+        <attr name="left_selected_change_color" format="color" />
+        <!-- 左边已经录制的颜色 -->
+        <attr name="left_has_recorded_color" format="color" />
+        <!-- 中间线的颜色 -->
+        <attr name="mid_line_color" format="color" />
+        <!-- 画线的颜色 -->
+        <attr name="line_color" format="color" />
+        <!-- 文字的颜色 -->
+        <attr name="text_color" format="color" />
+        <!-- 文字的大小 -->
+        <attr name="text_size" format="dimension" />
+        <!-- 灵敏度 -->
+        <attr name="sensibility" format="enum">
+            <enum name="low" value="5" />
+            <enum name="normal" value="3" />
+            <enum name="high" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <!--固定刻度的seekbar-->
+    <declare-styleable name="NumTipSeekBar">
+        <attr name="NumTipSeekBar_tickBarHeight" format="dimension"/>
+        <attr name="NumTipSeekBar_tickBarColor" format="color"/>
+        <attr name="NumTipSeekBar_circleButtonColor" format="color"/>
+        <attr name="NumTipSeekBar_circleButtonTextColor" format="color"/>
+        <attr name="NumTipSeekBar_circleButtonTextSize" format="dimension"/>
+        <attr name="NumTipSeekBar_circleButtonRadius" format="dimension"/>
+        <attr name="NumTipSeekBar_circleApertureWidth" format="dimension"/>
+        <attr name="NumTipSeekBar_circleApertureColor" format="color"/>
+        <attr name="NumTipSeekBar_progressHeight" format="dimension"/>
+        <attr name="NumTipSeekBar_progressColor" format="color"/>
+        <attr name="NumTipSeekBar_selectProgress" format="integer"/>
+        <attr name="NumTipSeekBar_startProgress" format="integer"/>
+        <attr name="NumTipSeekBar_maxProgress" format="integer"/>
+        <attr name="NumTipSeekBar_isShowButtonText" format="boolean"/>
+        <attr name="NumTipSeekBar_isShowButton" format="boolean"/>
+        <attr name="NumTipSeekBar_isRound" format="boolean"/>
+        <attr name="NumTipSeekBar_borderSize" format="dimension"/>
+        <attr name="NumTipSeekBar_borderColor" format="color"/>
+    </declare-styleable>
+
+    <!--等待进度环-->
+    <declare-styleable name="ProgressRing">
+        <attr name="ringStartColor" format="color"/>
+        <attr name="ringEndColor" format="color"/>
+        <attr name="ringWidth" format="dimension"/>
+    </declare-styleable>
+
+        <declare-styleable name="RatioImageView">
+            <!--宽度是否根据src图片的比例来测量（高度已知）-->
+            <attr name="is_width_fix_drawable_size_ratio" format="boolean"/>
+            <!--高度是否根据src图片的比例来测量（宽度已知）-->
+            <attr name="is_height_fix_drawable_size_ratio" format="boolean"/>
+            <!-- 高度设置，参考宽度，如0.5 , 表示 高度＝宽度×０.5 -->
+            <attr name="height_to_width_ratio" format="float"/>
+            <!-- 宽度设置，参考高度，如0.5 , 表示 宽度＝高度×０.5 -->
+            <attr name="width_to_height_ratio" format="float"/>
+        </declare-styleable>
+    <declare-styleable name="PercentProgressRing">
+        <attr name="cirqueGroundColor" format="color"/>
+        <attr name="cirqueGroundWidth" format="dimension"/>
+        <attr name="cirqueColor" format="color"/>
+        <attr name="cirqueWidth" format="dimension"/>
+        <attr name="percent" format="float"/>
+        <attr name="textSize" format="dimension"/>
+        <attr name="textColor" format="color"/>
+        <attr name="text" format="string"/>
+    </declare-styleable>
+    <!--MaterialEditText-->
+    <declare-styleable name="MaterialEditText">
+        <!-- The base color of the line and the texts. Default is black. -->
+        <attr name="met_baseColor" format="color" />
+        <!-- The highlight color of the line, and the floating label if the highlightFloatingLabel is true. -->
+        <attr name="met_primaryColor" format="color" />
+        <!-- How the floating label should be shown. Default is none -->
+        <attr name="met_floatingLabel">
+            <enum name="none" value="0" />
+            <enum name="normal" value="1" />
+            <enum name="highlight" value="2" />
+        </attr>
+        <!-- The color for when something is wrong.(e.g. exceeding max characters) -->
+        <attr name="met_errorColor" format="color" />
+        <!-- Min characters count limit. 0 means no limit. -->
+        <attr name="met_minCharacters" format="integer" />
+        <!-- max Characters count limit. 0 means no limit. -->
+        <attr name="met_maxCharacters" format="integer" />
+        <!-- Whether to show the bottom ellipsis in singleLine mode -->
+        <attr name="met_singleLineEllipsis" format="boolean" />
+        <!-- Reserved bottom text lines count, no matter if there is some helper/error text. -->
+        <attr name="met_minBottomTextLines" format="integer" />
+        <!-- Helper text at the bottom -->
+        <attr name="met_helperText" format="string" />
+        <!-- Helper text color -->
+        <attr name="met_helperTextColor" format="color" />
+        <!-- Font of the paint used to draw accent texts -->
+        <attr name="met_accentTypeface" format="string" />
+        <!-- Font used on view -->
+        <attr name="met_typeface" format="string" />
+        <!-- Custom float label text -->
+        <attr name="met_floatingLabelText" format="string" />
+        <!-- spacing between the main text and the floating label -->
+        <attr name="met_floatingLabelPadding" format="dimension" />
+        <!-- Hide underline -->
+        <attr name="met_hideUnderline" format="boolean" />
+        <!-- Underline's color -->
+        <attr name="met_underlineColor" format="color" />
+        <!-- Auto validate -->
+        <attr name="met_autoValidate" format="boolean" />
+        <!-- Left icon -->
+        <attr name="met_iconLeft" format="reference" />
+        <!-- Right icon -->
+        <attr name="met_iconRight" format="reference" />
+        <!-- Padding between icon(s) and the main area. 8dp by default. -->
+        <attr name="met_iconPadding" format="dimension" />
+        <!-- Clear button -->
+        <attr name="met_clearButton" format="boolean" />
+        <!-- The floating label's text size. 12sp by default. -->
+        <attr name="met_floatingLabelTextSize" format="dimension" />
+        <!-- The floating label's text color. -1 by default. -->
+        <attr name="met_floatingLabelTextColor" format="color" />
+        <!-- The bottom texts' size. 12sp by default. -->
+        <attr name="met_bottomTextSize" format="dimension" />
+        <!-- Always show the floating label, instead of animating it in/out. False by default. -->
+        <attr name="met_floatingLabelAlwaysShown" format="boolean" />
+        <!-- Always show the helper text, no matter if the edit text is focused. False by default. -->
+        <attr name="met_helperTextAlwaysShown" format="boolean" />
+        <!-- Whether use animation to show/hide the floating label. True by default. -->
+        <attr name="met_floatingLabelAnimating" format="boolean"/>
+        <!-- Text color -->
+        <attr name="met_textColor" format="color" />
+        <!-- Hint Text Color -->
+        <attr name="met_textColorHint" format="color" />
+        <!-- Auto validate on focus lost. False by default. -->
+        <attr name="met_validateOnFocusLost" format="boolean"/>
+        <!-- Whether check the characters count at the beginning it's shown. True by default. -->
+        <attr name="met_checkCharactersCountAtBeginning" format="boolean"/>
+
+    </declare-styleable>
+    <declare-styleable name="WheelView">
+        <attr name="unitHeight" format="dimension" />
+        <attr name="itemNumber" format="integer"/>
+
+        <attr name="normalTextColor" format="color" />
+        <attr name="normalTextSize" format="dimension" />
+        <attr name="selectedTextColor" format="color" />
+        <attr name="selectedTextSize" format="dimension" />
+        <attr name="isCyclic" format="boolean" />
+
+        <attr name="lineColor" format="color" />
+        <attr name="lineHeight" format="dimension" />
+
+        <attr name="noEmpty" format="boolean"/>
+        <attr name="isEnable" format="boolean"/>
+
+        <attr name="maskDarkColor" format="color" />
+        <attr name="maskLightColor" format="color" />
+    </declare-styleable>
+</resources>

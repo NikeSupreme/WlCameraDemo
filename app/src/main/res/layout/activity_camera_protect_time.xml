@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/v6_bg"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/ll_allday"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="@dimen/default_padding_normal"
+        android:layout_marginRight="@dimen/default_padding_normal"
+        android:background="@color/white">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="@dimen/default_padding_small"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/icon_timeset_all_day" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/default_padding_small"
+                android:layout_marginTop="7dp"
+                android:textColor="#333333"
+                android:text="@string/Whole_Day_Protection"
+                android:textSize="@dimen/default_text_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="7dp"
+                android:layout_marginLeft="@dimen/default_padding_small"
+                android:layout_marginTop="5dp"
+                android:text="@string/Camera_Whole_Day_Protection"
+                android:textColor="@color/v6_green"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_allday_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/icon_time_choose"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_day"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="@dimen/default_padding_normal"
+        android:layout_marginRight="@dimen/default_padding_normal"
+        android:background="@color/white">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="@dimen/default_padding_small"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/icon_timeset_day" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textColor="#333333"
+                android:layout_marginLeft="@dimen/default_padding_small"
+                android:layout_marginTop="7dp"
+                android:text="@string/Day_Protection"
+                android:textSize="@dimen/default_text_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="7dp"
+                android:layout_marginLeft="@dimen/default_padding_small"
+                android:layout_marginTop="5dp"
+                android:text="@string/Camera_Day_Protection"
+                android:textColor="@color/v6_green"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_day_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/icon_time_choose"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_night"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="@dimen/default_padding_normal"
+        android:layout_marginRight="@dimen/default_padding_normal"
+        android:background="@color/white">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="@dimen/default_padding_small"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/icon_timeset_night" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="#333333"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/default_padding_small"
+                android:layout_marginTop="7dp"
+                android:text="@string/Night_Protection"
+                android:textSize="@dimen/default_text_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="7dp"
+                android:layout_marginLeft="@dimen/default_padding_small"
+                android:layout_marginTop="5dp"
+                android:text="@string/Camera_Night_Protection"
+                android:textColor="@color/v6_green"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_night_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/icon_time_choose"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_user_defined"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="@dimen/default_padding_normal"
+        android:layout_marginRight="@dimen/default_padding_normal"
+        android:background="@color/white">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="@dimen/default_padding_small"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/icon_timeset_user_defined" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#333333"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/default_padding_small"
+                android:layout_marginTop="7dp"
+                android:text="@string/Custom_Time"
+                android:textSize="@dimen/default_text_size" />
+
+            <TextView
+                android:id="@+id/tv_user_defined"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="7dp"
+                android:layout_marginLeft="@dimen/default_padding_small"
+                android:layout_marginTop="5dp"
+                android:text="@string/Camera_Night_Protection"
+                android:textColor="@color/v6_green"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_user_define"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/icon_time_choose"
+            android:visibility="visible" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/cb_workday"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:button="@null"
+            android:background="@drawable/selector_read_agreement_icon"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="@dimen/default_padding_normal" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:layout_gravity="center_vertical"
+            android:layout_toRightOf="@+id/cb_workday"
+            android:gravity="center_vertical"
+            android:layout_marginTop="17dp"
+            android:layout_marginLeft="10dp"
+            android:text="@string/Working_Days_Protection"
+            android:textSize="@dimen/default_text_size" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <Button
+            android:id="@+id/btn_sure"
+            style="@style/config_next_button"
+            android:layout_gravity="bottom"
+            android:text="@string/Sure"
+            android:visibility="visible" />
+    </LinearLayout>
+
+
+</LinearLayout>

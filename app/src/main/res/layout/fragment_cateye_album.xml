@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.tonicartos.widget.stickygridheaders.StickyGridHeadersGridView
+        android:id="@+id/gridView"
+        android:layout_below="@id/main_titlebar"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        android:clipToPadding="false"
+        android:numColumns="3"
+        android:scrollbars="none" />
+    
+    <RelativeLayout
+        android:id="@+id/opLayout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#CB000000"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:clickable="true">
+        <TextView
+            android:id="@+id/select_all"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="15sp"
+            android:layout_marginStart="15dp"
+            android:gravity="center_vertical"
+            android:text="@string/CateEye_Album_Tittle_Select_All"
+            android:textColor="@color/white"
+            android:clickable="true"/>
+
+        <TextView
+            android:id="@+id/delete_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="15sp"
+            android:layout_marginEnd="15dp"
+            android:gravity="center_vertical"
+            android:layout_alignParentEnd="true"
+            android:text="@string/Delete"
+            android:textColor="@color/white"
+            android:clickable="true"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_album_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/CateEye_Album_Empty"
+        android:textColor="@color/black"
+        android:visibility="gone" />
+
+</RelativeLayout>

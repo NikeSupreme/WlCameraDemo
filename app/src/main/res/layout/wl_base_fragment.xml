@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/hl_base_fragment_lin_sub"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/v6_bg"
+    android:orientation="vertical">
+
+    <!--头部布局-->
+    <FrameLayout
+        android:id="@+id/hl_base_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/v6_green"
+        android:minHeight="48dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom">
+            <!--左侧 布局-->
+            <LinearLayout
+                android:id="@+id/base_lin_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="9dp"
+                android:paddingRight="9dp"
+                android:visibility="visible">
+                <!--左侧ImageView-->
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp">
+
+                    <ImageView
+                        android:id="@+id/base_img_back_fragment"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center"
+                        android:scaleType="center"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:id="@+id/news_setting"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="-12dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/base_img_back_fragment" />
+                </RelativeLayout>
+
+                <!--左侧文本-->
+                <TextView
+                    android:id="@+id/txt_left"
+                    style="@style/TextView.normal_r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    android:text="@string/Login_Register"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <!--标题头-->
+                <TextView
+                    android:id="@+id/base_tv_fragment_title"
+                    style="@style/TextView.normal_a"
+                    android:layout_width="175dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:ellipsize="end"
+                    android:gravity="center_horizontal"
+                    android:lines="1"
+                    android:singleLine="true"
+                    android:visibility="gone"
+                    tools:text="标题" />
+
+                <include layout="@layout/search_view" />
+                <!--<EditText-->
+                <!--android:id="@+id/et_title_search"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:background="@drawable/shape_edit_title_bg"-->
+                <!--android:hint="搜索设备"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:paddingLeft="10dp"-->
+                <!--android:textCursorDrawable="@null"-->
+                <!--android:drawableLeft="@drawable/ic_launcher"-->
+                <!--android:singleLine="true"-->
+                <!--android:textColor="@color/black"-->
+                <!--android:visibility="visible"/>-->
+            </FrameLayout>
+
+            <!--标题头，图标，没有用过-->
+            <ImageView
+                android:id="@+id/base_img_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_launcher"
+                android:visibility="gone" />
+
+            <!--右侧图标-->
+            <LinearLayout
+                android:id="@+id/rel_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="9dp"
+                android:paddingRight="9dp"
+                android:visibility="visible">
+                <!--右侧图标-->
+                <ImageView
+                    android:id="@+id/base_img_right"
+                    android:layout_width="35dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:scaleType="fitXY"
+                    android:visibility="gone" />
+                <!--右侧文本-->
+                <TextView
+                    android:id="@+id/txt_right"
+                    style="@style/TextView.normal_r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:gravity="center"
+                    android:text="@string/Login_Register"
+                    android:textColor="@color/white"
+                    android:visibility="visible" />
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+
+    <!--app运行中，通过代码 addview -->
+</LinearLayout>

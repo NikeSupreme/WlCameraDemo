@@ -1,0 +1,9 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 控件里面的颜色，如果是EditText的话里面设置#ffffff 或者自己喜欢的颜色-->
+    <solid android:color="@color/white"/>
+    <!-- 圆角度-->
+    <corners android:radius="5dp"/>
+    <!-- 控件外面边框的颜色和宽度  如果选择不要边框的去掉这个就是了-->
+    <stroke android:width="1px" android:color="#666666"/>
+    <!-- 这是设置渐变色属性的如果设置了solid这个属性和gradient两个设置但是只能显示一个效果。-->
+</shape>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".device.setting.CameraZoneSettingActivity">
+
+    <LinearLayout
+        android:id="@+id/layout_brand_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/scene_accent_text_color"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/camera_zone_text_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:text="@string/Cancel"
+                android:textColor="@color/white"
+                android:visibility="invisible" />
+
+            <LinearLayout
+                android:id="@+id/camera_zone_linear_search"
+                android:layout_width="@dimen/scene_search_view_Width"
+                android:layout_height="@dimen/scene_search_view_Height"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/shape_edit_title_bg"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_search" />
+
+                <TextView
+                    android:id="@+id/tv_search_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="5dp"
+                    android:gravity="center"
+                    android:text="@string/AddDevice_Search"
+                    android:textColor="@color/device_search_text_color"
+                    android:textSize="@dimen/search_text_size" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/camera_zone_edit_search"
+                android:layout_width="@dimen/scene_search_view_Width"
+                android:layout_height="@dimen/scene_search_view_Height"
+                android:layout_alignBottom="@+id/camera_zone_linear_search"
+                android:layout_alignStart="@+id/camera_zone_linear_search"
+                android:layout_alignTop="@+id/camera_zone_linear_search"
+                android:background="@drawable/shape_edit_title_bg"
+                android:drawableEnd="@drawable/icon_delete"
+                android:drawableStart="@drawable/icon_search"
+                android:hint="@string/AddDevice_Search"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:lines="1"
+                android:paddingEnd="@dimen/scene_search_view_edit_padding_lr"
+                android:paddingStart="@dimen/scene_search_view_edit_padding_lr"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@null"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/tv_define"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/default_padding_small"
+                android:text="@string/Infraredrelay_List_Custom"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/scene_search_view_Bottom" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:background="@color/newBackground">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/camera_zone_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/camera_zone_text_noResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/message_center_detail_no_result_MarginTop"
+            android:gravity="center_horizontal"
+            android:text="@string/Tip_Search_No_Result"
+            android:textColor="@color/message_center_no_result_text_color"
+            android:textSize="16sp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/camera_zone_text_no_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/message_center_detail_no_result_MarginTop"
+            android:gravity="center_horizontal"
+            android:text="@string/Infraredtransponder_List_Nobrand"
+            android:textColor="@color/message_center_no_result_text_color"
+            android:textSize="16sp"
+            android:visibility="invisible" />
+    </FrameLayout>
+</LinearLayout>

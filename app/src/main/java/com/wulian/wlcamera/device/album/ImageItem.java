@@ -1,0 +1,18 @@
+package com.wulian.wlcamera.device.album;
+
+import java.io.Serializable;
+
+/**
+ * 一个图片对象
+ * 
+ * @author Administrator
+ * 
+ */
+public class ImageItem implements Serializable {
+	public String imageId;
+	public String thumbnailPath;
+	public String imagePath;
+	public String time;
+	public int headerId;
+	public boolean isSelected = false;
+}

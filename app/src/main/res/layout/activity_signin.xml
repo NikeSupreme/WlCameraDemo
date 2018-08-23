@@ -1,0 +1,141 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingTop="60dp"
+            android:src="@drawable/wl_logo_grey" />
+
+        <ImageView
+            android:id="@+id/imageView_finish"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="15dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon_del" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/login_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="30dp">
+
+        <com.wulian.wlcamera.customview.material.MaterialEditText
+            android:id="@+id/et_userId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="用户ID"
+            android:inputType="text"
+            android:text="us954413g6l5v6rbtbsk"
+            android:maxLines="1"
+            android:textSize="18sp"
+            app:met_clearButton="true"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelTextColor="@color/v6_green"
+            app:met_primaryColor="@color/v6_green"
+            app:met_singleLineEllipsis="true"
+            app:met_textColor="@color/v6_text_dark"
+            app:met_textColorHint="@color/v6_text_gray" />
+
+        <com.wulian.wlcamera.customview.material.MaterialEditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="用户密码"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:text="fe0d6b67c2d4ddf9"
+            android:textSize="18sp"
+            app:met_clearButton="true"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelTextColor="@color/v6_green"
+            app:met_primaryColor="@color/v6_green"
+            app:met_singleLineEllipsis="true"
+            app:met_textColor="@color/v6_text_dark"
+            app:met_textColorHint="@color/v6_text_gray" />
+
+        <com.wulian.wlcamera.customview.material.MaterialEditText
+            android:id="@+id/et_deviceId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="设备ID"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textSize="18sp"
+            app:met_clearButton="true"
+            app:met_floatingLabel="highlight"
+            android:text="cmic078e50294d415774"
+            app:met_floatingLabelTextColor="@color/v6_green"
+            app:met_primaryColor="@color/v6_green"
+            app:met_singleLineEllipsis="true"
+            app:met_textColor="@color/v6_text_dark"
+            app:met_textColorHint="@color/v6_text_gray" />
+
+        <com.wulian.wlcamera.customview.material.MaterialEditText
+            android:id="@+id/et_deviceDomain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="设备域名"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textSize="18sp"
+            app:met_clearButton="true"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelTextColor="@color/v6_green"
+            app:met_primaryColor="@color/v6_green"
+            app:met_singleLineEllipsis="true"
+            android:text="shsp.wuliangroup.cn"
+            app:met_textColor="@color/v6_text_dark"
+            app:met_textColorHint="@color/v6_text_gray" />
+
+        <com.wulian.wlcamera.customview.material.MaterialEditText
+            android:id="@+id/et_userDomain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="用户域名"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textSize="18sp"
+            app:met_clearButton="true"
+            android:text="shsp.wuliangroup.cn"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelTextColor="@color/v6_green"
+            app:met_primaryColor="@color/v6_green"
+            app:met_singleLineEllipsis="true"
+            app:met_textColor="@color/v6_text_dark"
+            app:met_textColorHint="@color/v6_text_gray" />
+
+        <Button
+            android:id="@+id/login"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/v6_green"
+            android:gravity="center"
+            android:text="@string/Login_Login"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+</LinearLayout>
