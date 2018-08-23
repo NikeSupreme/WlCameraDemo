@@ -505,7 +505,6 @@ public class LookeverDetailActivity extends BaseTitleActivity {
                         }
                     });
                 }
-                btn_definition.setVisibility(View.GONE);
                 brightnessSetPop.showUpRise(btn_brightness, brightnessValue);
             } else if (v == btn_definition) {
                 if (definitionChoosePop == null) {

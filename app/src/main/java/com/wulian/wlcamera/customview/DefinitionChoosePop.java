@@ -68,7 +68,7 @@ public class DefinitionChoosePop extends PopupWindow {
         view.getLocationInWindow(anchorPosition);
         int anchorX = anchorPosition[0];
         int anchorY = anchorPosition[1];
-        showAtLocation(view, Gravity.TOP | Gravity.LEFT, anchorX, anchorY - textViewHeight * 3);
+        showAtLocation(view, Gravity.TOP | Gravity.LEFT, anchorX + view.getWidth() / 3, anchorY - textViewHeight * 3);
     }
 
     class DefinitionListAdapter extends BaseAdapter {
@@ -76,9 +76,9 @@ public class DefinitionChoosePop extends PopupWindow {
         private List<DefinitionBean> list = new ArrayList<>();
 
         public DefinitionListAdapter(Context context) {
-            list.add(new DefinitionBean(context,1));
-            list.add(new DefinitionBean(context,2));
-            list.add(new DefinitionBean(context,3));
+            list.add(new DefinitionBean(context, 1));
+            list.add(new DefinitionBean(context, 2));
+            list.add(new DefinitionBean(context, 3));
         }
 
         public List<DefinitionBean> getData() {
@@ -106,7 +106,7 @@ public class DefinitionChoosePop extends PopupWindow {
                 TextView textView = new TextView(context);
                 textView.setHeight(textViewHeight);
                 textView.setBackgroundResource(R.color.black);
-                textView.setAlpha(0.5f );
+                textView.setAlpha(0.5f);
                 textView.setTextSize(14);
                 textView.setGravity(Gravity.CENTER);
                 textView.setMaxLines(1);
