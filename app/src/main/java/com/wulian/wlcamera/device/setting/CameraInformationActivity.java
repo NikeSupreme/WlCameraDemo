@@ -72,7 +72,7 @@ public class CameraInformationActivity extends BaseTitleActivity implements View
     protected void initData() {
         super.initData();
         iCamDeviceBean = (ICamDeviceBean) getIntent().getSerializableExtra("ICamDeviceBean");
-        tvDeviceNumber.setText(iCamDeviceBean.uniqueDeviceId);
+        tvDeviceNumber.setText(iCamDeviceBean.did);
         queryDetailInformation();
         getLatestFirmwareVersion();
 
@@ -80,12 +80,12 @@ public class CameraInformationActivity extends BaseTitleActivity implements View
 
 
     private void queryDetailInformation() {
-        IPCMsgController.MsgQueryDeviceDescriptionInfo(iCamDeviceBean.uniqueDeviceId,
+        IPCMsgController.MsgQueryDeviceDescriptionInfo(iCamDeviceBean.did,
                 iCamDeviceBean.sdomain);
     }
 
     private void getLatestFirmwareVersion() {
-        IPCMsgController.MsgQueryFirewareVersion(iCamDeviceBean.uniqueDeviceId, iCamDeviceBean.sdomain);
+        IPCMsgController.MsgQueryFirewareVersion(iCamDeviceBean.did, iCamDeviceBean.sdomain);
 
     }
 

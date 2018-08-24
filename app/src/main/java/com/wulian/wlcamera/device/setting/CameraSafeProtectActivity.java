@@ -52,8 +52,7 @@ public class CameraSafeProtectActivity extends BaseTitleActivity implements Icam
     private Button btnStopProtect;
     private Button btnProtect;
 
-    private String deviceID;
-    private String uniqueDeviceId;
+    private String deviceId;
     private String sipDomain;
 
     private ICamDeviceBean iCamDeviceBean;
@@ -99,8 +98,7 @@ public class CameraSafeProtectActivity extends BaseTitleActivity implements Icam
     protected void initData() {
         super.initData();
         iCamDeviceBean = (ICamDeviceBean) getIntent().getSerializableExtra("ICamDeviceBean");
-        deviceID = iCamDeviceBean.did;
-        uniqueDeviceId = iCamDeviceBean.uniqueDeviceId;
+        deviceId = iCamDeviceBean.did;
         sipDomain = iCamDeviceBean.sdomain;
         sp = getSharedPreferences(ConfigUtil.SP_CONFIG, MODE_PRIVATE);
         initWebData();
@@ -155,18 +153,18 @@ public class CameraSafeProtectActivity extends BaseTitleActivity implements Icam
     public void initWebData() {
         // 查询移动布防
         IPCMsgController.MsgQueryMovementDetectionInfo(
-                uniqueDeviceId, sipDomain);
-        IPCMsgController.MsgQueryLinkageArmingInfo(uniqueDeviceId,
+                deviceId, sipDomain);
+        IPCMsgController.MsgQueryLinkageArmingInfo(deviceId,
                 sipDomain);
     }
 
     private void updateView() {
-        boolean isMoveEnable = sp.getBoolean(deviceID
+        boolean isMoveEnable = sp.getBoolean(deviceId
                 + ConfigUtil.IS_MOVE_DETECTION, false);
         WLog.i("hxctest","updateview = "+isMoveEnable);
-        String weekday = sp.getString(deviceID
+        String weekday = sp.getString(deviceId
                 + ConfigUtil.MOVE_WEEKDAY, "");
-        String time = sp.getString(deviceID
+        String time = sp.getString(deviceId
                 + ConfigUtil.MOVE_TIME, "");
         WLog.i("safeProtect","isMoveEnable = "+isMoveEnable);
         WLog.i("safeProtect","weekday = " +weekday+",time = "+time);
@@ -227,11 +225,11 @@ public class CameraSafeProtectActivity extends BaseTitleActivity implements Icam
     }
 
     private void stopProtect() {
-        String moveArea = sp.getString(deviceID
+        String moveArea = sp.getString(deviceId
                 + ConfigUtil.MOVE_AREA, ";");
-        IPCMsgController.MsgConfigMovementDetection(uniqueDeviceId,
+        IPCMsgController.MsgConfigMovementDetection(deviceId,
                 sipDomain, false, 50, moveArea.split(";"));
-        IPCMsgController.MsgConfigLinkageArming(uniqueDeviceId,
+        IPCMsgController.MsgConfigLinkageArming(deviceId,
                 sipDomain, false, null);
         ProgressDialogManager.getDialogManager().showDialog(STOP_PROTECT,this, null, null, 10000);
         ConstantsUtil.START_PROTECT_AREA = false;
@@ -270,12 +268,12 @@ public class CameraSafeProtectActivity extends BaseTitleActivity implements Icam
                         sen = 50;
                     }
                     SharedPreferences.Editor editor = sp.edit();
-                    editor.putInt(deviceID
+                    editor.putInt(deviceId
                             + ConfigUtil.MOVE_SENSITIVITY, sen);// 灵敏度
-                    editor.putBoolean(deviceID
+                    editor.putBoolean(deviceId
                             + ConfigUtil.IS_MOVE_DETECTION, isMoveEnable);// 启用
                     WLog.i("hxctest","QUERY_MOVEMENT_DETECTION_INFO = "+isMoveEnable);
-                    editor.putString(deviceID + ConfigUtil.MOVE_AREA,
+                    editor.putString(deviceId + ConfigUtil.MOVE_AREA,
                             sb.toString().equals("") ? ";" : sb.toString());// 区域
                     editor.commit();
 
@@ -293,14 +291,14 @@ public class CameraSafeProtectActivity extends BaseTitleActivity implements Icam
                     if (eventType == 1 || eventType == 2) {// 1 移动布防 2 遮挡布防
                         String config_weekday, config_time;
                         if (eventType == 1) {
-                            config_weekday = deviceID
+                            config_weekday = deviceId
                                     + ConfigUtil.MOVE_WEEKDAY;
-                            config_time = deviceID
+                            config_time = deviceId
                                     + ConfigUtil.MOVE_TIME;
                         } else {
-                            config_weekday = deviceID
+                            config_weekday = deviceId
                                     + ConfigUtil.COVER_WEEKDAY;
-                            config_time = deviceID
+                            config_time = deviceId
                                     + ConfigUtil.COVER_TIME;
                         }
 
@@ -365,7 +363,7 @@ public class CameraSafeProtectActivity extends BaseTitleActivity implements Icam
                 sipokcount = 0;
                 SharedPreferences.Editor editor = sp.edit();
                 if(!ConstantsUtil.START_PROTECT_AREA){
-                    editor.putBoolean(deviceID
+                    editor.putBoolean(deviceId
                             + ConfigUtil.IS_MOVE_DETECTION, false);
                     WLog.i("hxctest","STOP_PROTECT = "+false);
                     editor.commit();

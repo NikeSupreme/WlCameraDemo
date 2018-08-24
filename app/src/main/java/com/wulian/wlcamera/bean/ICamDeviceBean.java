@@ -20,5 +20,4 @@ public class ICamDeviceBean implements Serializable {
     public String version;
     public String type;
     public int isRtmp;//是否开启极速模式;
-    public String uniqueDeviceId;//一物一码唯一id,和爱看侧通信的id
 }

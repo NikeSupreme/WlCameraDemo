@@ -1,0 +1,157 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/mainview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <com.wulian.webrtc.ViEAndroidGLES20
+            android:id="@+id/view_video"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+        <ScrollView
+            android:id="@+id/myScrollView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/btn_VideoInvert"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="VideoInvert"
+                    android:textColor="#000000" />
+
+                <Button
+                    android:id="@+id/btn_MakeCall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="MakeCall"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:id="@+id/iv_getPicture"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dip" />
+
+                <Button
+                    android:id="@+id/btn_getRenderFrame"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="getRenderFrame"
+                    android:textColor="#000000" />
+
+                <Button
+                    android:id="@+id/btn_DQ"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DQ"
+                    android:textColor="#000000" />
+
+                <Button
+                    android:id="@+id/btn_getSpeed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Speed"
+                    android:textColor="#000000" />
+
+                <Button
+                    android:id="@+id/btn_CloseVideo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CloseVideo"
+                    android:textColor="#000000" />
+
+                <Button
+                    android:id="@+id/btn_Play_And_Record_SND"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Play_And_Record_SND"
+                    android:textColor="#000000" />
+
+                <Button
+                    android:id="@+id/btn_Stop_Play_And_Record_SND"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Stop_Play_And_Record_SND"
+                    android:textColor="#000000" />
+
+                <Button
+                    android:id="@+id/btn_SendInfo_Play_SND"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Play_SND"
+                    android:textColor="#000000" />
+
+                <Button
+                    android:id="@+id/btn_SendInfo_Stop_play_SND"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Stop_play_SND"
+                    android:textColor="#000000" />
+
+                <Button
+                    android:id="@+id/btn_SendInfo_Record_SND"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Record_SND"
+                    android:textColor="#000000" />
+
+                <Button
+                    android:id="@+id/btn_SendInfo_Stop_record_SND"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Stop record SND"
+                    android:textColor="#000000" />
+
+                <Button
+                    android:id="@+id/btn_SendInfo_Set_voice_mute_SND"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set voice Mute"
+                    android:textColor="#000000" />
+
+                <Button
+                    android:id="@+id/btn_SendMessage_Low_DPI"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Low_DPI"
+                    android:textColor="#000000" />
+
+                <Button
+                    android:id="@+id/btn_SendMessage_Middle_DPI"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Middle_DPI"
+                    android:textColor="#000000" />
+
+                <Button
+                    android:id="@+id/btn_SendMessage_HIGH_DPI"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="HIGH_DPI"
+                    android:textColor="#000000" />
+
+                <Button
+                    android:id="@+id/btn_SendMessage_SUPER_DPI"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SUPER_DPI"
+                    android:textColor="#000000" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

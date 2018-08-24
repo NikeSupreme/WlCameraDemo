@@ -1,0 +1,83 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Init RTC something"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:id="@+id/btn_initRTC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="InitRTC"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/btn_destroyRTC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="destroyRTC"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/btn_RtcNetChanged"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RtcNetChanged"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/btn_RegisterAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RegisterAccount"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/btn_unRegisterAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="unRegisterAccount"
+            android:textColor="#000000" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_PlayVideo1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="PlayVideo" />
+
+            <Button
+                android:id="@+id/btn_RePlayVideo1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="RePlayVideo" />
+
+            <Button
+                android:id="@+id/btn_DeviceSetting1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="DeviceSetting" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

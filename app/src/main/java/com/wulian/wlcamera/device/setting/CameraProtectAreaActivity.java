@@ -36,7 +36,7 @@ import java.util.LinkedList;
 
 public class CameraProtectAreaActivity extends Activity implements View.OnClickListener {
     private static final String TAG = "LookEverProtectAreaActivity";
-    private String deviceID;
+    private String deviceId;
     private String sipDomain;
     private ICamDeviceBean iCamDeviceBean;
     private Button btnSure;
@@ -70,10 +70,10 @@ public class CameraProtectAreaActivity extends Activity implements View.OnClickL
 
     protected void initData() {
         iCamDeviceBean = (ICamDeviceBean) getIntent().getSerializableExtra("ICamDeviceBean");
-        deviceID = iCamDeviceBean.did;
+        deviceId = iCamDeviceBean.did;
         sipDomain = iCamDeviceBean.sdomain;
         isFirstRun();
-        filePath = FileUtil.getLastFramePath() + "/" + deviceID+".jpg";
+        filePath = FileUtil.getLastFramePath() + "/" + deviceId+".jpg";
         showSnapshot(filePath);
         type = getIntent().getIntExtra("type", 1);
         area = getIntent().getStringExtra("area");

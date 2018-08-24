@@ -120,7 +120,7 @@ public class CameraZoneSettingActivity extends BaseTitleActivity {
                 selectedZoneName = bean;
                 for (int i = 0; i < mTotalList.size(); i++) {
                     if (mTotalList.get(i).cn.contains(bean.cn)) {
-                        IPCMsgController.MsgNotifyTimeZone(iCamDeviceBean.uniqueDeviceId, iCamDeviceBean.sdomain, mTotalList.get(i).en);
+                        IPCMsgController.MsgNotifyTimeZone(iCamDeviceBean.did, iCamDeviceBean.sdomain, mTotalList.get(i).en);
                         WLog.i(TAG, "ZoneCode : " + mTotalList.get(i).en);
                         setResult(RESULT_OK,new Intent().putExtra("zoneName",mTotalList.get(i).en));
                         finish();

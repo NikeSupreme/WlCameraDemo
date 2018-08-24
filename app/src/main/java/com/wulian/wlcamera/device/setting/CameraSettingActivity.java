@@ -56,8 +56,7 @@ public class CameraSettingActivity extends BaseTitleActivity implements IcamMsgE
     private static final int REQUEST_ZONE = 1;
     private static final int MSG_FINISH = 1;
     private static final int MSG_EDIT_META = 2;
-    private String deviceID;
-    private String uniqueDeviceId;
+    private String deviceId;
     private String sipDomain;
     private String deviceName;
     private boolean hasSDCard;
@@ -136,8 +135,7 @@ public class CameraSettingActivity extends BaseTitleActivity implements IcamMsgE
     protected void initData() {
         super.initData();
         iCamDeviceBean = (ICamDeviceBean) getIntent().getSerializableExtra("ICamDeviceBean");
-        deviceID = iCamDeviceBean.did;
-        uniqueDeviceId = iCamDeviceBean.uniqueDeviceId;
+        deviceId = iCamDeviceBean.did;
         sipDomain = iCamDeviceBean.sdomain;
 
         languageVolumeBean = new LanguageVolumeBean();
@@ -254,11 +252,11 @@ public class CameraSettingActivity extends BaseTitleActivity implements IcamMsgE
      * 查询随便看设置信息
      */
     private void initWebData() {
-        IPCMsgController.MsgQueryLedAndVoicePromptInfo(uniqueDeviceId, sipDomain);//查询led和voice
-        IPCMsgController.MsgQueryStorageStatus(uniqueDeviceId, sipDomain);//查询储状态信息
-        IPCMsgController.MsgQueryVolume(uniqueDeviceId, sipDomain);//查询摄像机音量设置
-        IPCMsgController.MsgQueryLanguage(uniqueDeviceId, sipDomain);//查询摄像机播报语言
-        IPCMsgController.MsgQueryTimeZone(uniqueDeviceId, sipDomain);//查询摄像机时区
+        IPCMsgController.MsgQueryLedAndVoicePromptInfo(deviceId, sipDomain);//查询led和voice
+        IPCMsgController.MsgQueryStorageStatus(deviceId, sipDomain);//查询储状态信息
+        IPCMsgController.MsgQueryVolume(deviceId, sipDomain);//查询摄像机音量设置
+        IPCMsgController.MsgQueryLanguage(deviceId, sipDomain);//查询摄像机播报语言
+        IPCMsgController.MsgQueryTimeZone(deviceId, sipDomain);//查询摄像机时区
 
     }
 
@@ -287,7 +285,7 @@ public class CameraSettingActivity extends BaseTitleActivity implements IcamMsgE
 
     //设置led、voice、angle
     private void configLEDVoiceAngel() {
-        IPCMsgController.MsgConfigLedAndVoicePrompt(uniqueDeviceId, sipDomain, led == 1 ? true : false,
+        IPCMsgController.MsgConfigLedAndVoicePrompt(deviceId, sipDomain, led == 1 ? true : false,
                 voice == 1 ? true : false, angle == 180 ? true : false);
     }
 

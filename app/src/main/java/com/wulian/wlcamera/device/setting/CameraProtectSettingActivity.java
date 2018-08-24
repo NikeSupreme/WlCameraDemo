@@ -46,8 +46,7 @@ public class CameraProtectSettingActivity extends BaseTitleActivity implements I
     private SeekBar sbMove;
     private Button btnStartProtect;
 
-    private String deviceID;
-    private String uniqueDeviceId;
+    private String deviceId;
     private String sipDomain;
     public static final String DAY_EVERY = "7,1,2,3,4,5,6,";
     public static final String DAY_WORKDAY = "1,2,3,4,5,";
@@ -101,8 +100,7 @@ public class CameraProtectSettingActivity extends BaseTitleActivity implements I
     protected void initData() {
         super.initData();
         iCamDeviceBean = (ICamDeviceBean) getIntent().getSerializableExtra("ICamDeviceBean");
-        deviceID = iCamDeviceBean.did;
-        uniqueDeviceId = iCamDeviceBean.uniqueDeviceId;
+        deviceId = iCamDeviceBean.did;
         sipDomain = iCamDeviceBean.sdomain;
         sp = getSharedPreferences(ConfigUtil.SP_CONFIG, MODE_PRIVATE);
         initMoveData();
@@ -168,7 +166,7 @@ public class CameraProtectSettingActivity extends BaseTitleActivity implements I
                         return;
                     }
                     IPCMsgController.MsgConfigMovementDetection(
-                            uniqueDeviceId, sipDomain, true,
+                            deviceId, sipDomain, true,
                             sbMove.getProgress(), areaMove);
                     String[] strWeek = new String[weekdayMove.length];
                     for (int i = 0; i < weekdayMove.length; i++) {
@@ -204,7 +202,7 @@ public class CameraProtectSettingActivity extends BaseTitleActivity implements I
                         }
                         strWeek[i] = sbWeek.toString();
                     }
-                    IPCMsgController.MsgConfigLinkageArming(uniqueDeviceId,
+                    IPCMsgController.MsgConfigLinkageArming(deviceId,
                             sipDomain, true, strWeek);
                     ProgressDialogManager.getDialogManager().showDialog(START_PROTECT, this, null, null, 10000);
                 } catch (IndexOutOfBoundsException e) {
@@ -249,13 +247,13 @@ public class CameraProtectSettingActivity extends BaseTitleActivity implements I
     }
 
     private void initMoveData() {
-        spMoveArea = sp.getString(deviceID + ConfigUtil.MOVE_AREA,
+        spMoveArea = sp.getString(deviceId + ConfigUtil.MOVE_AREA,
                 ";");
-        spMoveSensitivity = sp.getInt(deviceID
+        spMoveSensitivity = sp.getInt(deviceId
                 + ConfigUtil.MOVE_SENSITIVITY, 50);
-        spMoveWeekday = sp.getString(deviceID
+        spMoveWeekday = sp.getString(deviceId
                 + ConfigUtil.MOVE_WEEKDAY, "");
-        spMoveTime = sp.getString(deviceID + ConfigUtil.MOVE_TIME,
+        spMoveTime = sp.getString(deviceId + ConfigUtil.MOVE_TIME,
                 "");
         // TODO 过滤，如果跨夜，则截取,维持成四段
         String[] time = spMoveTime.split(",");
@@ -286,16 +284,16 @@ public class CameraProtectSettingActivity extends BaseTitleActivity implements I
 
     private void commitSP() {
         SharedPreferences.Editor editor = sp.edit();
-        editor.putInt(deviceID + ConfigUtil.MOVE_SENSITIVITY,
+        editor.putInt(deviceId + ConfigUtil.MOVE_SENSITIVITY,
                 sbMove.getProgress());// 灵敏度
-        editor.putBoolean(deviceID + ConfigUtil.IS_MOVE_DETECTION,
+        editor.putBoolean(deviceId + ConfigUtil.IS_MOVE_DETECTION,
                 true);// 启用
         WLog.i("hxctest", "commitSP = " + true);
-        editor.putString(deviceID + ConfigUtil.MOVE_AREA,
+        editor.putString(deviceId + ConfigUtil.MOVE_AREA,
                 spMoveArea);// 区域
-        editor.putString(deviceID + ConfigUtil.MOVE_WEEKDAY,
+        editor.putString(deviceId + ConfigUtil.MOVE_WEEKDAY,
                 spMoveWeekday);
-        editor.putString(deviceID + ConfigUtil.MOVE_TIME,
+        editor.putString(deviceId + ConfigUtil.MOVE_TIME,
                 spMoveTime);
         editor.commit();
         WLog.i("safeProtect", "---CommitSp--->");

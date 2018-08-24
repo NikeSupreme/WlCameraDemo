@@ -87,7 +87,7 @@ public class CameraBroadcastActivity extends BaseTitleActivity implements View.O
                 setSelectItem(position);
                 adapter.notifyDataSetInvalidated();
                 selectVolume = getSelectVolume(position);
-                IPCMsgController.MsgNotifyVolume(iCamDeviceBean.uniqueDeviceId, iCamDeviceBean.sdomain, selectVolume);
+                IPCMsgController.MsgNotifyVolume(iCamDeviceBean.did, iCamDeviceBean.sdomain, selectVolume);
             }
         });
     }
@@ -111,13 +111,13 @@ public class CameraBroadcastActivity extends BaseTitleActivity implements View.O
                 ivEnglishChecked.setVisibility(View.VISIBLE);
                 ivChineseChecked.setVisibility(View.GONE);
                 selectLanguage = "en";
-                IPCMsgController.MsgNotifyLanguage(iCamDeviceBean.uniqueDeviceId, iCamDeviceBean.sdomain, selectLanguage);
+                IPCMsgController.MsgNotifyLanguage(iCamDeviceBean.did, iCamDeviceBean.sdomain, selectLanguage);
                 break;
             case R.id.rl_ch:
                 ivChineseChecked.setVisibility(View.VISIBLE);
                 ivEnglishChecked.setVisibility(View.GONE);
                 selectLanguage = "cn";
-                IPCMsgController.MsgNotifyLanguage(iCamDeviceBean.uniqueDeviceId, iCamDeviceBean.sdomain, selectLanguage);
+                IPCMsgController.MsgNotifyLanguage(iCamDeviceBean.did, iCamDeviceBean.sdomain, selectLanguage);
                 break;
             default:
                 break;

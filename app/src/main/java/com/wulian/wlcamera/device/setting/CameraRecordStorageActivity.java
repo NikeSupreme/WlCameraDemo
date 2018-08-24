@@ -39,8 +39,7 @@ public class CameraRecordStorageActivity extends BaseTitleActivity implements Ic
     private TextView tvTotalStorage;
     private TextView tvUsedStorage;
     private ICamDeviceBean iCamDeviceBean;
-    private String deviceID;
-    private String uniqueDeviceId;
+    private String deviceId;
     private String sipDomain;
     private Button btnFormat;
     private boolean isFormatOk;
@@ -50,7 +49,7 @@ public class CameraRecordStorageActivity extends BaseTitleActivity implements Ic
         public void handleMessage(Message msg) {
             switch (msg.what) {
                 case 0:
-                    IPCMsgController.MsgQueryStorageStatus(uniqueDeviceId, sipDomain);
+                    IPCMsgController.MsgQueryStorageStatus(deviceId, sipDomain);
                     break;
                 default:
                     break;
@@ -91,10 +90,9 @@ public class CameraRecordStorageActivity extends BaseTitleActivity implements Ic
     protected void initData() {
         super.initData();
         iCamDeviceBean = (ICamDeviceBean) getIntent().getSerializableExtra("ICamDeviceBean");
-        deviceID = iCamDeviceBean.did;
-        uniqueDeviceId = iCamDeviceBean.uniqueDeviceId;
+        deviceId = iCamDeviceBean.did;
         sipDomain = iCamDeviceBean.sdomain;
-        IPCMsgController.MsgQueryStorageStatus(uniqueDeviceId, sipDomain);
+        IPCMsgController.MsgQueryStorageStatus(deviceId, sipDomain);
     }
 
     @Override
@@ -113,7 +111,7 @@ public class CameraRecordStorageActivity extends BaseTitleActivity implements Ic
                         new WLDialog.MessageListener() {
                             @Override
                             public void onClickPositive(View var1, String msg) {
-                                IPCMsgController.MsgConfigLocalStorageDeviceFormat(uniqueDeviceId, sipDomain);
+                                IPCMsgController.MsgConfigLocalStorageDeviceFormat(deviceId, sipDomain);
                                 isFormat = true;
                                 formatDialog.dismiss();
                                 progressDialogManager.showDialog(FORMAT, CameraRecordStorageActivity.this, getResources().getString(R.string.Formatting), null);

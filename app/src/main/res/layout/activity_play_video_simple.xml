@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_play_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEFEF"
+    android:orientation="vertical" >
+
+    <com.wulian.webrtc.ViEAndroidGLES20
+        android:id="@+id/view_video"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/tv_simple"
+        android:layout_width="match_parent"
+        android:layout_height="100dip"
+        android:text="ffdsfadsfdsaf" />
+
+    <Button
+        android:id="@+id/btn_snapshot_new"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_gravity="end|bottom"
+        android:paddingBottom="20dp"
+        android:text="play_snapshot"
+        android:textColor="#333333" />
+
+    <Button
+        android:id="@+id/tv_cap_gallery1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="end|bottom"
+        android:visibility="gone" />
+    <!-- 竖屏下中间操作栏布局 -->
+
+    <ImageView
+        android:id="@+id/iv_cap_gallery"
+        android:layout_width="90dip"
+        android:layout_height="90dip"
+        android:layout_gravity="start|bottom"
+        android:scaleType="centerInside"
+        android:visibility="visible" />
+
+</FrameLayout>

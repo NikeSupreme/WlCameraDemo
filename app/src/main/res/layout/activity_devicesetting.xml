@@ -1,0 +1,190 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btn_QueryDeviceDescriptionInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="QueryDeviceDescriptionInfo"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/btn_QueryCameraInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="QueryCameraInfo"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/btn_ConfigCSC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ConfigCSC"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/btn_QueryFirewareUpdateMode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="QueryFirewareUpdateMode"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/btn_ConfigUploadIPCLogs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ConfigUploadIPCLogs"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/btn_ConfigMovementDetection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ConfigMovementDetection"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/btn_QueryMovementDetectionInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="QueryMovementDetectionInfo"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/btn_ConfigLinkageArming"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ConfigLinkageArming"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/btn_QueryLinkageArmingInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="QueryLinkageArmingInfo"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/btn_QueryPTZInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="QueryPTZInfo"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/btn_QueryStorageStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="QueryStorageStatus"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/btn_ConfigLocalStorageDeviceFormat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ConfigLocalStorageDeviceFormat"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/btn_NotifySynchroPermission"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NotifySynchroPermission"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/btn_QueryFirewareVersion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="QueryFirewareVersion"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/btn_QueryHistoryRecord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="QueryHistoryRecord"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/btn_ControlStartRecord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ControlStartRecord"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/btn_ControlStopRecord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ControlStopRecord"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/btn_ControlHistoryRecordProgress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ControlHistoryRecordProgress"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/btn_NotifyHistoryRecordHeartbeat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NotifyHistoryRecordHeartbeat"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/btn_SendMessage_Set_LED"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Set_LED"
+            android:textColor="#000000" />
+        
+        
+        
+        <Button
+            android:id="@+id/btn_WulianBellQueryNotifyHeartBeat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="WulianBellQueryNotifyHeartBeat"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/btn_WulianBellQueryControlAppInitiativeHangup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="WulianBellQueryControlAppInitiativeHangup"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/btn_WulianBellQueryDeviceConfigInformation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="WulianBellQueryDeviceConfigInformation"
+            android:textColor="#000000" />
+<Button
+            android:id="@+id/btn_WulianBellQuerySetDeviceLanguage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="WulianBellQuerySetDeviceLanguage"
+            android:textColor="#000000" />
+        <Button
+            android:id="@+id/btn_WulianBellQuerySetPIRConfigInformation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="WulianBellQuerySetPIRConfigInformation"
+            android:textColor="#000000" />
+  
+        
+    </LinearLayout>
+
+</ScrollView>
