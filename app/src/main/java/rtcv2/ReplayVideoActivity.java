@@ -38,7 +38,6 @@ import java.util.UUID;
 
 /**
  * @ClassName: ReplayVideoActivity
- * @Function: TODO
  * @Date: 2017年2月6日
  * @author Puml
  * @email puml@wuliangroup.cn
