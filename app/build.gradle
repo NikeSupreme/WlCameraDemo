@@ -25,6 +25,14 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    signingConfigs {
+        config {
+            keyAlias 'anddev.keystore'
+            keyPassword 'password'
+            storeFile file('../anddev.keystore')
+            storePassword 'password'
+        }
+    }
 
 }
 configurations.all {
