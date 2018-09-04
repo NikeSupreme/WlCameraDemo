@@ -100,8 +100,8 @@ public class CameraProtectSettingActivity extends BaseTitleActivity implements I
     protected void initData() {
         super.initData();
         iCamDeviceBean = (ICamDeviceBean) getIntent().getSerializableExtra("ICamDeviceBean");
-        deviceId = iCamDeviceBean.did;
-        sipDomain = iCamDeviceBean.sdomain;
+        deviceId = iCamDeviceBean.deviceId;
+        sipDomain = iCamDeviceBean.deviceDomain;
         sp = getSharedPreferences(ConfigUtil.SP_CONFIG, MODE_PRIVATE);
         initMoveData();
         updateView();

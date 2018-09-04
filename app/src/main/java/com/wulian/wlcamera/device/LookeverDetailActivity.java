@@ -69,8 +69,6 @@ import com.wulian.wlcamera.utils.XmlHandler;
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
-import org.json.JSONException;
-import org.json.JSONObject;
 
 import java.io.File;
 import java.text.SimpleDateFormat;
@@ -150,7 +148,7 @@ public class LookeverDetailActivity extends BaseTitleActivity {
     private String sipDomain;
     private String sipUid;
     private String userSipPwd;
-
+    private ICamDeviceBean iCamDeviceBean;
 
     /**
      * 0 loading，1 断开，2 播放, 3 离线
@@ -159,16 +157,12 @@ public class LookeverDetailActivity extends BaseTitleActivity {
 
     public boolean isShared = false;
 
-    public static void start(Context context, String deviceId, String userSipPwd, String sipUid, String deviceDomain, String sipDomain) {
-        if (deviceId.startsWith("CG") &&deviceId.length() >= 11) {
-            deviceId= deviceId.substring(0, 11);
+    public static void start(Context context, ICamDeviceBean iCamDeviceBean) {
+        if (iCamDeviceBean.deviceId.startsWith("CG") && iCamDeviceBean.deviceId.length() >= 11) {
+            iCamDeviceBean.deviceId = iCamDeviceBean.deviceId.substring(0, 11);
         }
         context.startActivity(new Intent(context, LookeverDetailActivity.class)
-                .putExtra("deviceId", deviceId)
-                .putExtra("userSipPwd", userSipPwd)
-                .putExtra("sipUid", sipUid)
-                .putExtra("deviceDomain", deviceDomain)
-                .putExtra("sipDomain", sipDomain));
+                .putExtra("iCamDeviceBean", iCamDeviceBean));
     }
 
     @Override
@@ -257,11 +251,6 @@ public class LookeverDetailActivity extends BaseTitleActivity {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
     }
 
-    @Override
-    protected void initTitle() {
-        super.initTitle();
-        setToolBarTitleAndRightImg(getString(R.string.Lookever), R.drawable.icon_cateye_setting);
-    }
 
     @Override
     protected void initView() {
@@ -319,11 +308,13 @@ public class LookeverDetailActivity extends BaseTitleActivity {
     @Override
     protected void initData() {
         isFirstCreate = true;
-        deviceId = getIntent().getStringExtra("deviceId");
-        userSipPwd = getIntent().getStringExtra("userSipPwd");
-        deviceDomain = getIntent().getStringExtra("deviceDomain");
-        sipUid = getIntent().getStringExtra("sipUid");
-        sipDomain = getIntent().getStringExtra("sipDomain");
+        iCamDeviceBean = (ICamDeviceBean) getIntent().getSerializableExtra("iCamDeviceBean");
+        deviceId = iCamDeviceBean.deviceId;
+        userSipPwd = iCamDeviceBean.userPassword;
+        deviceDomain = iCamDeviceBean.deviceDomain;
+        sipUid = iCamDeviceBean.userId;
+        sipDomain = iCamDeviceBean.userDomain;
+        setToolBarTitleAndRightImg(getString(R.string.Penguin) + deviceId.substring(deviceId.length() - 3), R.drawable.icon_cateye_setting);
         soundPool = new SoundPool(2, AudioManager.STREAM_MUSIC, 0);
         snapshot_sound_id = soundPool.load(this, R.raw.snapshot, 1);
 
@@ -556,9 +547,6 @@ public class LookeverDetailActivity extends BaseTitleActivity {
             intent.putExtra("devId", deviceId);
             startActivity(intent);
         } else if (v.getId() == R.id.img_right) {
-            ICamDeviceBean iCamDeviceBean = new ICamDeviceBean();
-            iCamDeviceBean.did = deviceId;
-            iCamDeviceBean.sdomain = sipDomain;
             Intent intent = new Intent(this, CameraSettingActivity.class);
             intent.putExtra("ICamDeviceBean", iCamDeviceBean);
             startActivityForResult(intent, 1);

@@ -1,8 +1,10 @@
 package com.wulian.wlcamera.device.setting;
 
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.wulian.sdk.android.ipc.rtcv2.IPCMsgController;
@@ -33,6 +35,7 @@ public class CameraInformationActivity extends BaseTitleActivity implements View
     private TextView tvWifiStrength;
     private TextView tvIpAddress;
     private TextView tvMacAddress;
+    private ImageView ivImg;
     private ICamDeviceBean iCamDeviceBean;
 
 
@@ -59,6 +62,7 @@ public class CameraInformationActivity extends BaseTitleActivity implements View
         tvWifiStrength = (TextView) findViewById(R.id.tv_wifi_strength);
         tvIpAddress = (TextView) findViewById(R.id.tv_ip_address);
         tvMacAddress = (TextView) findViewById(R.id.tv_mac_address);
+        ivImg = (ImageView) findViewById(R.id.iv_img);
         tvFirmwareVersion.setOnClickListener(this);
     }
 
@@ -72,7 +76,11 @@ public class CameraInformationActivity extends BaseTitleActivity implements View
     protected void initData() {
         super.initData();
         iCamDeviceBean = (ICamDeviceBean) getIntent().getSerializableExtra("ICamDeviceBean");
-        tvDeviceNumber.setText(iCamDeviceBean.did);
+        tvDeviceNumber.setText(iCamDeviceBean.deviceId);
+        if (TextUtils.equals(iCamDeviceBean.type, "CMICA3")) {
+            tvDeviceType.setText(R.string.Penguin);
+            ivImg.setBackground(getResources().getDrawable(R.drawable.icon_camera_3_bg));
+        }
         queryDetailInformation();
         getLatestFirmwareVersion();
 
@@ -80,12 +88,12 @@ public class CameraInformationActivity extends BaseTitleActivity implements View
 
 
     private void queryDetailInformation() {
-        IPCMsgController.MsgQueryDeviceDescriptionInfo(iCamDeviceBean.did,
-                iCamDeviceBean.sdomain);
+        IPCMsgController.MsgQueryDeviceDescriptionInfo(iCamDeviceBean.deviceId,
+                iCamDeviceBean.deviceDomain);
     }
 
     private void getLatestFirmwareVersion() {
-        IPCMsgController.MsgQueryFirewareVersion(iCamDeviceBean.did, iCamDeviceBean.sdomain);
+        IPCMsgController.MsgQueryFirewareVersion(iCamDeviceBean.deviceId, iCamDeviceBean.deviceDomain);
 
     }
 
@@ -98,7 +106,6 @@ public class CameraInformationActivity extends BaseTitleActivity implements View
     }
 
 
-
     @Override
     @Subscribe(threadMode = ThreadMode.MAIN)
     public void onMessageEvent(IPCcameraXmlMsgEvent event) {
@@ -107,7 +114,7 @@ public class CameraInformationActivity extends BaseTitleActivity implements View
             switch (event.getApiType()) {
                 case QUERY_DEVICE_DESCRIPTION_INFO:
                 case QUERY_FIREWARE_VERSION:
-                    ToastUtil.show(this,getString(R.string.Config_Query_Device_Fail));
+                    ToastUtil.show(this, getString(R.string.Config_Query_Device_Fail));
                     break;
             }
         } else {

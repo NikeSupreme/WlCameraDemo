@@ -70,8 +70,8 @@ public class CameraProtectAreaActivity extends Activity implements View.OnClickL
 
     protected void initData() {
         iCamDeviceBean = (ICamDeviceBean) getIntent().getSerializableExtra("ICamDeviceBean");
-        deviceId = iCamDeviceBean.did;
-        sipDomain = iCamDeviceBean.sdomain;
+        deviceId = iCamDeviceBean.deviceId;
+        sipDomain = iCamDeviceBean.deviceDomain;
         isFirstRun();
         filePath = FileUtil.getLastFramePath() + "/" + deviceId+".jpg";
         showSnapshot(filePath);

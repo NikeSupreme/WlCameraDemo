@@ -8,16 +8,10 @@ import java.io.Serializable;
  */
 
 public class ICamDeviceBean implements Serializable {
-    public String shares;
-    public String nick;
-    public long updated;
-    public String location;
-    public String description;
-    public String did;//"cmic08a750294d412fce",//和云通信的id
-    public String sdomain;
-    public int protect;
-    public int online;
-    public String version;
+    public String deviceId;
+    public String userPassword;
+    public String userId;
+    public String deviceDomain;
+    public String userDomain;
     public String type;
-    public int isRtmp;//是否开启极速模式;
 }

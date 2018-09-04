@@ -104,7 +104,6 @@ public class PenguinDetailActivity extends BaseTitleActivity {
     private static final int TALK_PORTRAIT = 1;//竖屏按下说话
     private static final int TALK_LANDSCAPE = 2;// 横屏按下说话
 
-    private ICamDeviceBean iCamDeviceBean;
     private float mDensity;
     private int mHiddenViewMeasuredHeight;
     private int registerExpTime = 0;
@@ -164,6 +163,7 @@ public class PenguinDetailActivity extends BaseTitleActivity {
     private YuntaiButtonLandscape.Direction curDirectionLandscape;
     private Runnable autoPullRunnable;
     private String cameraDefinition;
+    private ICamDeviceBean iCamDeviceBean;
 
     private TranslateAnimation animation;
 
@@ -235,16 +235,13 @@ public class PenguinDetailActivity extends BaseTitleActivity {
         }
     };
 
-    public static void start(Context context, String deviceId, String userSipPwd, String sipUid, String deviceDomain, String sipDomain) {
-        if (deviceId.startsWith("CG") &&deviceId.length() >= 11) {
-            deviceId= deviceId.substring(0, 11);
+
+    public static void start(Context context, ICamDeviceBean iCamDeviceBean) {
+        if (iCamDeviceBean.deviceId.startsWith("CG") && iCamDeviceBean.deviceId.length() >= 11) {
+            iCamDeviceBean.deviceId = iCamDeviceBean.deviceId.substring(0, 11);
         }
         context.startActivity(new Intent(context, PenguinDetailActivity.class)
-                .putExtra("deviceId", deviceId)
-                .putExtra("userSipPwd", userSipPwd)
-                .putExtra("sipUid", sipUid)
-                .putExtra("deviceDomain", deviceDomain)
-                .putExtra("sipDomain", sipDomain));
+                .putExtra("iCamDeviceBean", iCamDeviceBean));
     }
 
     @Override
@@ -425,11 +422,14 @@ public class PenguinDetailActivity extends BaseTitleActivity {
             return;
         }
         isFirstCreate = true;
-        deviceId = getIntent().getStringExtra("deviceId");
-        userSipPwd = getIntent().getStringExtra("userSipPwd");
-        deviceDomain = getIntent().getStringExtra("deviceDomain");
-        sipUid = getIntent().getStringExtra("sipUid");
-        sipDomain = getIntent().getStringExtra("sipDomain");
+        iCamDeviceBean = (ICamDeviceBean) getIntent().getSerializableExtra("iCamDeviceBean");
+        deviceId = iCamDeviceBean.deviceId;
+        userSipPwd = iCamDeviceBean.userPassword;
+        deviceDomain = iCamDeviceBean.deviceDomain;
+        sipUid = iCamDeviceBean.userId;
+        sipDomain = iCamDeviceBean.userDomain;
+
+        setToolBarTitleAndRightImg(getString(R.string.Penguin) + deviceId.substring(deviceId.length() - 3), R.drawable.icon_cateye_setting);
         mDensity = getResources().getDisplayMetrics().density;
         mHiddenViewMeasuredHeight = (int) (mDensity * 50 + 0.5);
         updateLoadingState(0);
@@ -628,9 +628,6 @@ public class PenguinDetailActivity extends BaseTitleActivity {
             intent.putExtra("devId", deviceId);
             startActivity(intent);
         } else if (v.getId() == R.id.img_right) {
-            ICamDeviceBean iCamDeviceBean = new ICamDeviceBean();
-            iCamDeviceBean.did = deviceId;
-            iCamDeviceBean.sdomain = sipDomain;
             Intent intent = new Intent(this, CameraSettingActivity.class);
             intent.putExtra("ICamDeviceBean", iCamDeviceBean);
             startActivityForResult(intent, 1);

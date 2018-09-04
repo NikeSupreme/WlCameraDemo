@@ -5,14 +5,17 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.support.annotation.Nullable;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.CompoundButton;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.ToggleButton;
 
+import com.wulian.sdk.android.ipc.rtcv2.IPCController;
 import com.wulian.sdk.android.ipc.rtcv2.IPCMsgApiType;
 import com.wulian.sdk.android.ipc.rtcv2.IPCMsgController;
+import com.wulian.sdk.android.ipc.rtcv2.IPCResultCallBack;
 import com.wulian.sdk.android.ipc.rtcv2.message.IPCcameraXmlMsgEvent;
 import com.wulian.wlcamera.BaseTitleActivity;
 import com.wulian.wlcamera.R;
@@ -135,8 +138,14 @@ public class CameraSettingActivity extends BaseTitleActivity implements IcamMsgE
     protected void initData() {
         super.initData();
         iCamDeviceBean = (ICamDeviceBean) getIntent().getSerializableExtra("ICamDeviceBean");
-        deviceId = iCamDeviceBean.did;
-        sipDomain = iCamDeviceBean.sdomain;
+        deviceId = iCamDeviceBean.deviceId;
+        sipDomain = iCamDeviceBean.deviceDomain;
+
+        if (TextUtils.equals(iCamDeviceBean.type, "CMICA2")) {
+            tvDeviceName.setText(getString(R.string.Lookever) + deviceId.substring(deviceId.length() - 3));
+        } else if (TextUtils.equals(iCamDeviceBean.type, "CMICA3")) {
+            tvDeviceName.setText(getString(R.string.Penguin) + deviceId.substring(deviceId.length() - 3));
+        }
 
         languageVolumeBean = new LanguageVolumeBean();
         if (isShared) {
@@ -230,6 +239,7 @@ public class CameraSettingActivity extends BaseTitleActivity implements IcamMsgE
                 isQueryLedAndVoiceAndInvert = false;
             } else {
                 configLEDVoiceAngel();
+                reload();//画面倒置会挂断视频，需要重呼
             }
         } else if (id == R.id.tb_led) {
             if (isChecked) {
@@ -246,7 +256,15 @@ public class CameraSettingActivity extends BaseTitleActivity implements IcamMsgE
         }
     }
 
+    private void reload() {
+        IPCController.closeAllVideoAsync(null);
+        IPCController.makeCallAsync(new IPCResultCallBack() {
+            @Override
+            public void getResult(int i) {
 
+            }
+        }, deviceId, iCamDeviceBean.deviceDomain);
+    }
 
     /**
      * 查询随便看设置信息

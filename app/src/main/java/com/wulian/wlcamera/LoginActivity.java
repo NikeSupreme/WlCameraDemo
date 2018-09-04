@@ -14,6 +14,7 @@ import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
+import com.wulian.wlcamera.bean.ICamDeviceBean;
 import com.wulian.wlcamera.customview.material.MaterialEditText;
 import com.wulian.wlcamera.device.LookeverDetailActivity;
 import com.wulian.wlcamera.device.PenguinDetailActivity;
@@ -46,10 +47,10 @@ public class LoginActivity extends BaseFullscreenActivity implements View.OnClic
 
     private String type = "CMICA2";
     private String deviceId;//随便看"cmic078e50294d415774" 企鹅"cmic20b350294d000440"
-    private String deviceDomain ;
-    private String userDomain ;
-    private String userId ;
-    private String userPassword ;
+    private String deviceDomain;
+    private String userDomain;
+    private String userId;
+    private String userPassword;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -136,15 +137,22 @@ public class LoginActivity extends BaseFullscreenActivity implements View.OnClic
                 || TextUtils.isEmpty(userDomain)) {
             return;
         } else {
+            ICamDeviceBean iCamDeviceBean = new ICamDeviceBean();
+            iCamDeviceBean.deviceDomain = deviceDomain;
+            iCamDeviceBean.deviceId = deviceId;
+            iCamDeviceBean.userDomain = userDomain;
+            iCamDeviceBean.type = type;
+            iCamDeviceBean.userId = userId;
+            iCamDeviceBean.userPassword = userPassword;
             if (TextUtils.equals(type, "CMICA2")) {
-                LookeverDetailActivity.start(LoginActivity.this, deviceId, userPassword, userId, deviceDomain, userDomain);
+                LookeverDetailActivity.start(LoginActivity.this, iCamDeviceBean);
             } else if (TextUtils.equals(type, "CMICA3")) {
-                PenguinDetailActivity.start(LoginActivity.this, deviceId, userPassword, userId, deviceDomain, userDomain);
+                PenguinDetailActivity.start(LoginActivity.this, iCamDeviceBean);
             }
         }
     }
 
-    private void loginCommonDemo(){
+    private void loginCommonDemo() {
         userId = etUserId.getText().toString();
         userPassword = etPassword.getText().toString();
         deviceId = etDeviceId.getText().toString();
@@ -155,7 +163,7 @@ public class LoginActivity extends BaseFullscreenActivity implements View.OnClic
                 || TextUtils.isEmpty(userDomain)) {
             return;
         } else {
-                CameraStepsActivity.start(LoginActivity.this, deviceId, userPassword, userId, deviceDomain, userDomain);
+            CameraStepsActivity.start(LoginActivity.this, deviceId, userPassword, userId, deviceDomain, userDomain);
         }
     }
 }
