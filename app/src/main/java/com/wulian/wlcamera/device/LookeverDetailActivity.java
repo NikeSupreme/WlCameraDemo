@@ -314,7 +314,7 @@ public class LookeverDetailActivity extends BaseTitleActivity {
         deviceDomain = iCamDeviceBean.deviceDomain;
         sipUid = iCamDeviceBean.userId;
         sipDomain = iCamDeviceBean.userDomain;
-        setToolBarTitleAndRightImg(getString(R.string.Penguin) + deviceId.substring(deviceId.length() - 3), R.drawable.icon_cateye_setting);
+        setToolBarTitleAndRightImg(getString(R.string.Lookever) + deviceId.substring(deviceId.length() - 3), R.drawable.icon_cateye_setting);
         soundPool = new SoundPool(2, AudioManager.STREAM_MUSIC, 0);
         snapshot_sound_id = soundPool.load(this, R.raw.snapshot, 1);
 

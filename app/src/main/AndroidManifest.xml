@@ -74,6 +74,7 @@
         <activity android:name=".device.setting.CameraSafeProtectActivity" />
         <activity android:name=".device.setting.CameraProtectSettingActivity" />
         <activity android:name=".device.setting.CameraProtectTimeActivity" />
+        <activity android:name=".device.setting.CameraRecordStorageActivity" />
         <activity
             android:name=".device.setting.CameraProtectAreaActivity"
             android:launchMode="standard"
